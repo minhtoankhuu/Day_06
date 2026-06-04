@@ -168,6 +168,42 @@ class GeminiService:
         Chế độ fallback thông minh - phân tích query và persona
         để tạo response phù hợp khi không có API key
         """
+        query_lower = message.lower()
+        def has_kw(kw):
+            if " " in kw:
+                return kw in query_lower
+            return bool(re.search(rf"\b{kw}\b", query_lower))
+
+        unrelated_keywords = ["thời tiết", "weather", "code", "lập trình", "python", "javascript", "html", "css", "toán", "thơ", "chính trị", "tin tức", "lịch sử", "địa lý", "hát", "nhảy", "nhạc", "vẽ"]
+        non_food_compounds = ["bánh xe", "bánh răng", "bánh lái", "bánh xà phòng", "bánh xà bông", "bánh vẽ", "bánh đà", "nước mắt", "nước hoa", "nước sơn", "nước rửa", "nước lau", "đậu xe", "đậu đại học", "đậu tốt nghiệp", "đậu đỗ", "đỗ xe"]
+        food_keywords = ["ăn", "uống", "đói", "thèm", "cơm", "bún", "mì", "phở", "nước", "trà", "sữa", "bánh", "lẩu", "gà", "sườn", "cháo", "salad", "healthy", "chay", "ốc", "nem", "xiên"]
+        is_unrelated = (
+            any(has_kw(kw) for kw in non_food_compounds)
+            or (any(has_kw(kw) for kw in unrelated_keywords) and not any(has_kw(kw) for kw in food_keywords))
+        )
+        
+        if is_unrelated:
+            cohort = user_profile.get("cohort", "student")
+            if cohort == "pupil":
+                refusal = (
+                    "Hế lô cậu nhen! Mình là trợ lý tìm món của ShopeeFood chứ không phải là chuyên gia về chủ đề này đâu nè. "
+                    "Hôm nay cậu muốn mình tìm món gì ăn vặt hay trà sữa ngọt thơm không, bảo mình để mình tìm nhen! Cậu xác nhận lại món cậu thèm giúp mình nhé! 😋"
+                )
+            elif cohort == "student":
+                refusal = (
+                    "Yo đồng môn! Mình chỉ rành tìm món ăn, cứu đói thôi chứ chủ đề này mình chịu rồi! "
+                    "Đồng môn hôm nay muốn tìm mì trộn, cơm sườn hay món gì ăn no nạp năng lượng không? Xác nhận lại món thèm để mình tìm cho nha! 🔥"
+                )
+            else: # office
+                refusal = (
+                    "Chào anh/chị. Em là Trợ lý AI Tìm Món của ShopeeFood, nên em chỉ có thể hỗ trợ anh/chị tìm kiếm món ăn hoặc thức uống thôi ạ. "
+                    "Hôm nay anh/chị có nhu cầu tìm món ăn trưa, salad healthy hay nước uống nào không ạ? Xin anh/chị xác nhận lại yêu cầu món ăn giúp em nhé. 🙏"
+                )
+            return {
+                "response": refusal,
+                "suggested_food_ids": [],
+            }
+
         cohort = user_profile.get("cohort", "student")
         preferred_tastes = user_profile.get("taste_preferences", {}).get("preferred", [])
         allergies = self._get_allergy_terms(user_profile, message)
