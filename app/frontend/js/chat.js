@@ -270,7 +270,7 @@ const ChatModule = {
       const formattedHtml = this.formatResponse(content);
       bubble.innerHTML = `
         <div class="bubble-sender">
-          <img class="ai-avatar-mini" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+          <img class="ai-avatar-mini" src="/static/images/iconaichat.jpg" alt="AI">
           <span class="ai-name-mini">AI Copilot</span>
         </div>
         <div class="bubble-text">${formattedHtml}</div>
@@ -354,7 +354,7 @@ const ChatModule = {
     indicator.className = 'typing-indicator';
     indicator.id = 'chat-typing-indicator';
     indicator.innerHTML = `
-      <img class="ai-avatar-mini" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+      <img class="ai-avatar-mini" src="/static/images/iconaichat.jpg" alt="AI">
       <div class="typing-dots">
         <div class="typing-dot"></div>
         <div class="typing-dot"></div>

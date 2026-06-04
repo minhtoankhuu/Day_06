@@ -387,7 +387,7 @@ const App = {
     messages.innerHTML = `
       <div class="chat-bubble ai">
         <div class="bubble-sender">
-          <img class="ai-avatar-mini" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+          <img class="ai-avatar-mini" src="/static/images/iconaichat.jpg" alt="AI">
           <span class="ai-name-mini">AI Tìm Món</span>
         </div>
         <div class="bubble-text">
@@ -429,7 +429,7 @@ const App = {
       </div>
       <div class="chat-bubble ai">
         <div class="bubble-sender">
-          <img class="ai-avatar-mini" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+          <img class="ai-avatar-mini" src="/static/images/iconaichat.jpg" alt="AI">
           <span class="ai-name-mini">AI Tìm Món</span>
         </div>
         <div class="bubble-text">
