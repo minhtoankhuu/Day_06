@@ -342,23 +342,33 @@ const ChatModule = {
     return card;
   },
 
-  /**
-   * Appends typing indicator dots
-   */
   showTyping() {
     if (this.isTyping) return;
     this.isTyping = true;
     this.updateSendButtonState();
+
+    const cohort = this.currentUser ? this.currentUser.cohort : 'student';
+    let typingText = 'Đang suy nghĩ, chờ mình chút nhé... 🍜';
+    if (cohort === 'pupil') {
+      typingText = 'Đợi tớ một tẹo nhen, đang tìm món ngon cho cậu nè... 🔍';
+    } else if (cohort === 'student') {
+      typingText = 'Đang tìm món ngon rẻ cho đồng môn, chờ tí nhé... ⚡';
+    } else if (cohort === 'office') {
+      typingText = 'ShopeeFood AI đang tìm kiếm món phù hợp, xin chờ trong giây lát... ☕';
+    }
 
     const indicator = document.createElement('div');
     indicator.className = 'typing-indicator';
     indicator.id = 'chat-typing-indicator';
     indicator.innerHTML = `
       <img class="ai-avatar-mini" src="/static/images/iconaichat.jpg" alt="AI">
-      <div class="typing-dots">
-        <div class="typing-dot"></div>
-        <div class="typing-dot"></div>
-        <div class="typing-dot"></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <span class="typing-text" style="font-size: 11px; color: var(--text-secondary); font-weight: 500; line-height: 1.3; font-style: italic;">${typingText}</span>
+        <div class="typing-dots">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
       </div>
     `;
 
