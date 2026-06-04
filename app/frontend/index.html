@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ShopeeFood AI - Gợi ý món ăn thông minh</title>
+    <meta name="description"
+        content="Trợ lý tìm món ăn thông minh ShopeeFood AI Copilot - Gợi ý món ăn cá nhân hóa theo khẩu vị và ngân sách của bạn.">
+    <!-- Favicon Emoji -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍜</text></svg>">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- SCREEN 1: ONBOARDING / SPLASH -->
+        <div class="screen onboarding-screen" id="screen-onboarding">
+            <div class="onboarding-content">
+                <div class="onboarding-logo">
+                    <span class="logo-icon">🍜</span>
+                    <span class="logo-text">ShopeeFood AI</span>
+                    <p class="logo-subtitle">Trợ lý tìm món cá nhân hóa</p>
+                </div>
+
+                <div class="onboarding-heading">
+                    <h2>Hôm nay bạn muốn ăn gì?</h2>
+                    <p>Chọn phân nhóm để AI tối ưu hóa trải nghiệm của bạn</p>
+                </div>
+
+                <div class="persona-cards" id="persona-selector">
+                    <!-- Học sinh -->
+                    <div class="persona-card" data-persona="student_hoc_sinh">
+                        <div class="persona-avatar">🎒</div>
+                        <div class="persona-info">
+                            <div class="persona-name">Học sinh</div>
+                            <div class="persona-desc">Dưới 18 tuổi • Ăn vặt chiều, trà sữa ngọt dịu, bánh tráng hạt dẻ.
+                            </div>
+                            <span class="persona-budget">Ngân sách: ≤ 30.000đ</span>
+                        </div>
+                        <div class="persona-arrow">➔</div>
+                    </div>
+
+                    <!-- Sinh viên -->
+                    <div class="persona-card" data-persona="university_student">
+                        <div class="persona-avatar">🎓</div>
+                        <div class="persona-info">
+                            <div class="persona-name">Sinh viên</div>
+                            <div class="persona-desc">18 - 22 tuổi • Cơm bình dân no lâu, mì trộn xá xíu, cày game đêm
+                                muộn.</div>
+                            <span class="persona-budget">Ngân sách: ≤ 50.000đ</span>
+                        </div>
+                        <div class="persona-arrow">➔</div>
+                    </div>
+
+                    <!-- Văn phòng -->
+                    <div class="persona-card" data-persona="office_worker">
+                        <div class="persona-avatar">💼</div>
+                        <div class="persona-info">
+                            <div class="persona-name">Nhân viên văn phòng</div>
+                            <div class="persona-desc">Trên 23 tuổi • Cơm trưa healthy, salad ức gà áp chảo, cà phê sạch
+                                tỉnh táo.</div>
+                            <span class="persona-budget">Ngân sách: Lên tới 150.000đ</span>
+                        </div>
+                        <div class="persona-arrow">➔</div>
+                    </div>
+                </div>
+
+                <div class="onboarding-footer">
+                    <p>ShopeeFood AI Copilot • 2026</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN 2: HOME SCREEN -->
+        <div class="screen home-screen active" id="screen-home">
+            <!-- App Header -->
+            <header class="app-header">
+                <div class="app-location-block">
+                    <span class="location-label">Giao tới</span>
+                    <div class="location-row">
+                        <span class="location-pin">📍</span>
+                        <span class="location-text" id="home-location-text">Địa chỉ của bạn</span>
+                        <span class="location-caret">⌄</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn" id="btn-change-persona" title="Đổi nhóm tuổi">
+                        <span id="user-avatar">👤</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Search Bar placeholder -->
+            <div class="search-bar" id="search-bar-trigger">
+                <span class="search-icon">🔍</span>
+                <span class="search-placeholder">Cafe, Bánh mì, Cơm trưa...</span>
+            </div>
+
+            <!-- ShopeeFood-like service shortcuts -->
+            <div class="service-grid">
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/01_huong_dan_dat_mon.png" alt="Hướng dẫn">
+                    <span>Hướng Dẫn</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/02_nem_nuong.png" alt="Nem nướng">
+                    <span>Nem Nướng</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/03_mart.png" alt="Mart">
+                    <span>Mart</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/04_ga_ran.png" alt="Gà rán">
+                    <span>Gà Rán -50K</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/05_giam_30_com_tho.png" alt="Cơm thố">
+                    <span>Cơm Thố -30%</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/06_bao_het_phi_ship.png" alt="Bao ship">
+                    <span>Bao Ship</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/07_vi_dung_dinh.png" alt="Vị đúng đỉnh">
+                    <span>Vị Đúng Đỉnh</span>
+                </button>
+                <button class="service-item">
+                    <img src="/static/a%CC%89nh/category_icons_1254x1254/08_deal_le_hoi.png" alt="Deal lễ hội">
+                    <span>Deal Lễ Hội</span>
+                </button>
+            </div>
+
+            <!-- Campaign Banner -->
+            <div class="campaign-banner" id="home-campaign-banner">
+                <img src="/static/a%CC%89nh/shopee3.jpg" alt="Mì Trộn Hàng Xanh Deal Hot" class="campaign-banner-img">
+            </div>
+
+            <!-- Categories Section -->
+            <div class="category-section" style="margin-bottom: 8px;">
+                <div class="category-pills" id="category-pills">
+                    <button class="category-pill active" data-category="Tất cả">Tất cả</button>
+                    <button class="category-pill" data-category="Cơm - Mì">Cơm - Mì</button>
+                    <button class="category-pill" data-category="Đồ uống">Đồ uống</button>
+                    <button class="category-pill" data-category="Ăn vặt">Ăn vặt</button>
+                    <button class="category-pill" data-category="Healthy">Healthy</button>
+                </div>
+            </div>
+
+            <!-- Budget Filter Toggle -->
+            <div class="budget-toggle-container" id="budget-toggle-container"
+                style="padding: 0 var(--space-lg); margin-bottom: var(--space-lg); display: flex; justify-content: space-between; align-items: center;">
+                <span class="budget-toggle-text"
+                    style="font-size: var(--text-xs); color: var(--text-secondary); font-weight: 500;">
+                    Chỉ hiện món hợp túi tiền (<span id="current-budget-label">30.000đ</span>)
+                </span>
+                <label class="switch" style="position: relative; display: inline-block; width: 40px; height: 20px;">
+                    <input type="checkbox" id="budget-filter-toggle" checked style="opacity: 0; width: 0; height: 0;">
+                    <span class="slider round"
+                        style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px;"></span>
+                </label>
+            </div>
+
+            <!-- Main Food Recommendation Section -->
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">ShopeeFood gợi ý</span>
+                    <h3 class="section-title">Ăn ngon gần bạn</h3>
+                </div>
+                <span class="section-more" id="btn-home-chat-trigger">AI tìm món</span>
+            </div>
+
+            <!-- Grid of food cards -->
+            <div class="food-grid" id="home-food-grid">
+                <!-- Dynamic cards will be rendered here -->
+            </div>
+        </div>
+
+        <!-- AI CHAT FLOATING ENTRY -->
+        <button class="floating-chat-btn" id="floating-chat-btn" aria-label="Mở AI tìm món">
+            <img class="floating-chat-icon" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+            <span class="floating-chat-text">AI Tìm Món</span>
+        </button>
+
+        <!-- AI CHAT BOX OVERLAY -->
+        <div class="chatbox-overlay" id="chatbox-overlay" aria-hidden="true">
+            <div class="chatbox-panel">
+                <!-- Chat Header -->
+                <header class="chat-header">
+                    <button class="chat-back-btn" id="chat-close-btn">×</button>
+                    <img class="chat-header-avatar" src="/static/a%CC%89nh/iconaichat.jpg" alt="AI">
+                    <div class="chat-header-info">
+                        <div class="chat-header-name">AI Tìm Món</div>
+                        <div class="chat-header-status">Đang trực tuyến</div>
+                    </div>
+                </header>
+
+                <!-- Chat Messages -->
+                <div class="chat-messages" id="chat-messages-container">
+                    <!-- Chat bubbles rendered dynamically -->
+                </div>
+
+                <!-- Suggestion Chips -->
+                <div class="category-section"
+                    style="margin-bottom: 0; padding: 8px 16px; background: var(--card-bg); border-top: 1px solid var(--border-light); flex-shrink: 0;">
+                    <div class="category-pills" id="chat-suggestion-chips"
+                        style="gap: 8px; overflow-x: auto; padding: 4px 0;">
+                        <!-- Chips rendered dynamically -->
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="chat-input-bar">
+                    <div class="chat-input-wrapper">
+                        <input type="text" class="chat-input" id="chat-message-input" placeholder="Nhập tin nhắn..."
+                            autocomplete="off">
+                    </div>
+                    <button class="chat-send-btn" id="chat-send-btn" disabled>➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN 4: FOOD DETAIL SCREEN -->
+        <div class="screen detail-screen" id="screen-detail">
+            <!-- Hero section -->
+            <div class="detail-hero">
+                <button class="detail-back-btn" id="detail-back-btn">◀</button>
+                <img src="" alt="Món ăn" id="detail-food-img">
+                <div class="detail-hero-overlay">
+                    <span class="detail-hero-price" id="detail-food-price">0đ</span>
+                    <span class="detail-hero-rating"><span class="star-icon">⭐</span> <span
+                            id="detail-food-rating">4.8</span></span>
+                </div>
+            </div>
+
+            <!-- Content section -->
+            <div class="detail-content">
+                <h2 class="detail-name" id="detail-food-name">Tên Món Ăn</h2>
+                <div class="detail-shop" id="detail-food-shop">🏬 Tên Quán Ăn</div>
+
+                <!-- Info Chips row -->
+                <div class="detail-info-row">
+                    <div class="detail-info-chip">
+                        <div class="chip-icon">📍</div>
+                        <div class="chip-value" id="detail-food-distance">0.0 km</div>
+                        <div class="chip-label">Khoảng cách</div>
+                    </div>
+                    <div class="detail-info-chip">
+                        <div class="chip-icon">⏱️</div>
+                        <div class="chip-value" id="detail-food-eta">0 phút</div>
+                        <div class="chip-label">Thời gian giao</div>
+                    </div>
+                </div>
+
+                <!-- Food Tags -->
+                <div class="detail-tags" id="detail-food-tags">
+                    <!-- Dynamic tags -->
+                </div>
+
+                <!-- Allergy Warning Box (conditional) -->
+                <div class="allergy-warning" id="detail-allergy-box" style="display: none;">
+                    <span class="warn-icon">⚠️</span>
+                    <div class="warn-text" id="detail-allergy-text">Lưu ý: Món này có chứa thành phần dị ứng!</div>
+                </div>
+
+                <!-- Description -->
+                <h3 class="detail-description-title">Mô tả món ăn</h3>
+                <p class="detail-description" id="detail-food-description">Chi tiết mô tả món ăn...</p>
+            </div>
+
+            <!-- Fixed Order Button Section -->
+            <div class="detail-order-section">
+                <button class="detail-order-btn" id="detail-order-submit">
+                    🛒 Đặt Giao Ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAVIGATION (Shared for Home / Chat / Profile screens) -->
+        <nav class="bottom-nav" id="app-bottom-nav" style="display: none;">
+            <div class="nav-item active" data-screen="home">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Trang chủ</span>
+            </div>
+            <div class="nav-item" data-screen="favorites">
+                <span class="nav-icon">❤️</span>
+                <span class="nav-label">Yêu thích</span>
+            </div>
+            <div class="nav-item" data-screen="orders">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">Đơn hàng</span>
+            </div>
+            <div class="nav-item" data-screen="notifications">
+                <span class="nav-icon">🔔</span>
+                <span class="nav-label">Thông báo</span>
+            </div>
+            <div class="nav-item" data-screen="profile" id="nav-profile-btn">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Tôi</span>
+            </div>
+        </nav>
+
+        <!-- GLOBAL TOAST NOTIFICATION -->
+        <div class="toast" id="app-toast">Thông báo thành công!</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>

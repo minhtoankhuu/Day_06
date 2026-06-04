@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopeeFood AI — Bài Thuyết Trình</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* ============ RESET & BASE ============ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        :root {
+            --shopee-orange: #EE4D2D;
+            --shopee-dark: #1A1A2E;
+            --shopee-deeper: #0F0F1A;
+            --accent-cyan: #00D4FF;
+            --accent-green: #00E676;
+            --accent-purple: #A855F7;
+            --accent-pink: #F472B6;
+            --accent-yellow: #FBBF24;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255,255,255,0.7);
+            --glass-bg: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.1);
+        }
+
+        html, body {
+            width: 100%; height: 100%;
+            overflow: hidden;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--shopee-deeper);
+            color: var(--text-primary);
+        }
+
+        /* ============ SLIDE CONTAINER ============ */
+        .presentation {
+            width: 100vw; height: 100vh;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 80px;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: all;
+        }
+
+        .slide.exit-left {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        /* ============ ANIMATED BG ============ */
+        .slide::before {
+            content: '';
+            position: absolute;
+            width: 600px; height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(238,77,45,0.15), transparent 70%);
+            top: -200px; right: -200px;
+            animation: floatOrb 15s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .slide::after {
+            content: '';
+            position: absolute;
+            width: 400px; height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0,212,255,0.1), transparent 70%);
+            bottom: -150px; left: -100px;
+            animation: floatOrb 12s ease-in-out infinite reverse;
+            z-index: 0;
+        }
+
+        @keyframes floatOrb {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 30px) scale(0.95); }
+        }
+
+        .slide > * { position: relative; z-index: 1; }
+
+        /* ============ GRID LINES DECORATION ============ */
+        .grid-lines {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+
+        /* ============ TYPOGRAPHY ============ */
+        .slide-number {
+            position: absolute;
+            top: 30px; left: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--shopee-orange);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .slide-title {
+            font-size: clamp(36px, 4.5vw, 64px);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        .slide-title .highlight {
+            background: linear-gradient(135deg, var(--shopee-orange), #FF6B35, var(--accent-yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .slide-title .highlight-cyan {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .slide-subtitle {
+            font-size: clamp(16px, 1.8vw, 22px);
+            font-weight: 400;
+            color: var(--text-secondary);
+            text-align: center;
+            max-width: 750px;
+            line-height: 1.7;
+        }
+
+        /* ============ BADGE ============ */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .badge-orange {
+            background: rgba(238,77,45,0.15);
+            border: 1px solid rgba(238,77,45,0.3);
+            color: var(--shopee-orange);
+        }
+
+        .badge-cyan {
+            background: rgba(0,212,255,0.1);
+            border: 1px solid rgba(0,212,255,0.25);
+            color: var(--accent-cyan);
+        }
+
+        .badge-green {
+            background: rgba(0,230,118,0.1);
+            border: 1px solid rgba(0,230,118,0.25);
+            color: var(--accent-green);
+        }
+
+        /* ============ CARDS ============ */
+        .cards-row {
+            display: flex;
+            gap: 24px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px 28px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 340px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(238,77,45,0.4);
+        }
+
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============ STAT CARDS ============ */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .stat-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 28px 24px;
+            text-align: center;
+            backdrop-filter: blur(16px);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover { transform: translateY(-4px); }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ============ FLOW DIAGRAM ============ */
+        .flow-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flow-step {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 20px 24px;
+            text-align: center;
+            min-width: 160px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease;
+        }
+
+        .flow-step:hover { transform: scale(1.05); }
+
+        .flow-step-icon { font-size: 28px; margin-bottom: 8px; }
+        .flow-step-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .flow-arrow {
+            font-size: 24px;
+            color: var(--shopee-orange);
+            animation: pulseArrow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulseArrow {
+            0%, 100% { opacity: 0.5; transform: translateX(0); }
+            50% { opacity: 1; transform: translateX(4px); }
+        }
+
+        /* ============ PERSONA CARDS ============ */
+        .persona-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 36px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .persona-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 28px 24px;
+            text-align: center;
+            backdrop-filter: blur(16px);
+            transition: all 0.3s ease;
+        }
+
+        .persona-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .persona-card.pupil:hover { border-color: var(--accent-pink); }
+        .persona-card.student:hover { border-color: var(--accent-cyan); }
+        .persona-card.office:hover { border-color: var(--accent-green); }
+
+        .persona-emoji { font-size: 48px; margin-bottom: 12px; }
+        .persona-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .persona-budget {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .persona-budget.pink { color: var(--accent-pink); }
+        .persona-budget.cyan { color: var(--accent-cyan); }
+        .persona-budget.green { color: var(--accent-green); }
+
+        .persona-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .persona-tone {
+            margin-top: 12px;
+            padding: 10px 14px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 10px;
+            font-size: 12px;
+            color: var(--accent-yellow);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        /* ============ FEATURE LIST ============ */
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 32px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 24px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(8px);
+            border-color: rgba(238,77,45,0.4);
+        }
+
+        .feature-check {
+            width: 32px; height: 32px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--shopee-orange), #FF6B35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* ============ TECH STACK ============ */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 36px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .tech-item {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px 16px;
+            text-align: center;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease;
+        }
+
+        .tech-item:hover { transform: translateY(-4px); }
+        .tech-icon { font-size: 32px; margin-bottom: 10px; }
+        .tech-name { font-size: 14px; font-weight: 600; }
+        .tech-role {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* ============ SPLIT LAYOUT ============ */
+        .split {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .split-left, .split-right {
+            flex: 1;
+        }
+
+        .split-left .slide-title {
+            text-align: left;
+            font-size: clamp(28px, 3.5vw, 48px);
+        }
+
+        .split-left .slide-subtitle {
+            text-align: left;
+        }
+
+        /* ============ IMAGE MOCKUP ============ */
+        .phone-mockup {
+            width: 280px;
+            height: 560px;
+            border-radius: 36px;
+            border: 3px solid rgba(255,255,255,0.15);
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(238,77,45,0.15);
+            background: #000;
+            flex-shrink: 0;
+        }
+
+        .phone-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ============ WORKFLOW IMAGE ============ */
+        .workflow-img-container {
+            max-width: 700px;
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+
+        .workflow-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ============ SAFETY TABLE ============ */
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 36px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .safety-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease;
+        }
+
+        .safety-card:hover { transform: translateY(-4px); }
+        .safety-icon { font-size: 28px; margin-bottom: 10px; }
+        .safety-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .safety-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+        /* ============ TIMELINE ============ */
+        .timeline {
+            display: flex;
+            gap: 20px;
+            margin-top: 36px;
+            max-width: 1100px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .timeline-item {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px 20px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover { transform: translateY(-4px); }
+        .timeline-phase {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--shopee-orange);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .timeline-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .timeline-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============ CTA BUTTON ============ */
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 100px;
+            background: linear-gradient(135deg, var(--shopee-orange), #FF6B35);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 32px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(238,77,45,0.4);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(238,77,45,0.5);
+        }
+
+        /* ============ NAVIGATION ============ */
+        .nav-bar {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 100px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background: var(--shopee-orange);
+            border-color: var(--shopee-orange);
+        }
+
+        .nav-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .nav-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-dot.active {
+            background: var(--shopee-orange);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .slide-counter {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        /* ============ PROGRESS BAR ============ */
+        .progress-bar {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--shopee-orange), var(--accent-yellow));
+            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1001;
+        }
+
+        /* ============ LOGO ============ */
+        .logo-corner {
+            position: absolute;
+            top: 24px;
+            right: 40px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+            z-index: 10;
+        }
+
+        .logo-corner span { color: var(--shopee-orange); }
+
+        /* ============ ANIMATIONS ============ */
+        .slide.active .animate-up {
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-up {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .delay-1 { animation-delay: 0.1s !important; }
+        .delay-2 { animation-delay: 0.2s !important; }
+        .delay-3 { animation-delay: 0.3s !important; }
+        .delay-4 { animation-delay: 0.4s !important; }
+        .delay-5 { animation-delay: 0.5s !important; }
+        .delay-6 { animation-delay: 0.6s !important; }
+
+        @keyframes slideUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ============ TITLE SLIDE SPECIAL ============ */
+        .title-slide-bg {
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse at 30% 20%, rgba(238,77,45,0.2) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(0,212,255,0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(168,85,247,0.08) 0%, transparent 40%);
+            z-index: 0;
+        }
+
+        .team-info {
+            margin-top: 24px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .team-info strong {
+            color: var(--text-primary);
+        }
+
+        /* ============ AUGMENTATION DIAGRAM ============ */
+        .aug-container {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-top: 36px;
+            max-width: 900px;
+        }
+
+        .aug-box {
+            padding: 24px 28px;
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            text-align: center;
+            flex: 1;
+        }
+
+        .aug-user {
+            background: rgba(0,212,255,0.1);
+            border: 1px solid rgba(0,212,255,0.3);
+        }
+
+        .aug-ai {
+            background: rgba(238,77,45,0.1);
+            border: 1px solid rgba(238,77,45,0.3);
+        }
+
+        .aug-result {
+            background: rgba(0,230,118,0.1);
+            border: 1px solid rgba(0,230,118,0.3);
+        }
+
+        .aug-icon { font-size: 36px; margin-bottom: 8px; }
+        .aug-label { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+        .aug-desc { font-size: 12px; color: var(--text-secondary); }
+
+        .aug-plus {
+            font-size: 28px;
+            color: var(--accent-purple);
+            font-weight: 800;
+        }
+
+        /* ============ TWO COL ============ */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 36px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .col-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .col-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .col-list li {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .col-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--shopee-orange);
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slide { padding: 40px 24px; }
+            .cards-row, .persona-grid, .stat-grid, .tech-grid, .safety-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .split { flex-direction: column-reverse; gap: 30px; }
+            .phone-mockup { width: 200px; height: 400px; }
+            .flow-container { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+            .two-col { grid-template-columns: 1fr; }
+            .aug-container { flex-direction: column; }
+            .timeline { flex-direction: column; align-items: center; }
+        }
+
+        /* ============ KEYBOARD HINT ============ */
+        .keyboard-hint {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            color: rgba(255,255,255,0.25);
+            text-align: center;
+            z-index: 999;
+        }
+
+        kbd {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <div class="presentation" id="presentation">
+        <!-- ====== SLIDE 1: TITLE ====== -->
+        <div class="slide active" id="slide-0">
+            <div class="title-slide-bg"></div>
+            <div class="grid-lines"></div>
+            <div class="badge badge-orange animate-up delay-1">🚀 AI-Powered Food Discovery</div>
+            <h1 class="slide-title animate-up delay-2">
+                <span class="highlight">ShopeeFood AI</span><br>
+                Personalized Suggestions
+            </h1>
+            <p class="slide-subtitle animate-up delay-3">
+                Giải pháp AI Copilot cá nhân hóa gợi ý món ăn — Giảm quá tải lựa chọn, tăng tỷ lệ chuyển đổi
+            </p>
+            <div class="team-info animate-up delay-4">
+                <strong>Bài thuyết trình dự án</strong> · Tích hợp AI vào ứng dụng giao đồ ăn
+            </div>
+            <button class="cta-btn animate-up delay-5" onclick="nextSlide()">
+                Bắt đầu ➜
+            </button>
+        </div>
+
+        <!-- ====== SLIDE 2: PROBLEM ====== -->
+        <div class="slide" id="slide-1">
+            <div class="grid-lines"></div>
+            <span class="slide-number">01 · Vấn đề</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-orange animate-up delay-1">🔍 Pain Point Analysis</div>
+            <h1 class="slide-title animate-up delay-2">
+                <span class="highlight">Discovery Overload</span><br>
+                Quá tải lựa chọn
+            </h1>
+            <p class="slide-subtitle animate-up delay-3">
+                Người dùng mở ShopeeFood nhưng không biết ăn gì. Hàng nghìn quán, menu dài dằng dặc — và tất cả đều giống nhau.
+            </p>
+            <div class="stat-grid animate-up delay-4">
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--shopee-orange);">72%</div>
+                    <div class="stat-label">User lướt > 5 phút<br>vẫn chưa chọn được</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--accent-cyan);">1000+</div>
+                    <div class="stat-label">Món ăn hiển thị<br>gây mệt mỏi</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--accent-pink);">38%</div>
+                    <div class="stat-label">Thoát app do<br>không tìm được món</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 3: SOLUTION ====== -->
+        <div class="slide" id="slide-2">
+            <div class="grid-lines"></div>
+            <span class="slide-number">02 · Giải pháp</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-cyan animate-up delay-1">💡 Solution</div>
+            <h1 class="slide-title animate-up delay-2">
+                AI Copilot <span class="highlight-cyan">Augmentation</span>
+            </h1>
+            <p class="slide-subtitle animate-up delay-3">
+                AI chỉ hỗ trợ thu hẹp lựa chọn và giải thích lý do — Người dùng vẫn là người quyết định cuối cùng
+            </p>
+            <div class="aug-container animate-up delay-4">
+                <div class="aug-box aug-user">
+                    <div class="aug-icon">👤</div>
+                    <div class="aug-label">Người dùng</div>
+                    <div class="aug-desc">Nhập yêu cầu tự nhiên<br>"Ăn gì ngon rẻ gần đây?"</div>
+                </div>
+                <div class="aug-plus">+</div>
+                <div class="aug-box aug-ai">
+                    <div class="aug-icon">🤖</div>
+                    <div class="aug-label">AI Copilot</div>
+                    <div class="aug-desc">Phân tích hồ sơ, ngân sách<br>và khẩu vị cá nhân</div>
+                </div>
+                <div class="aug-plus">=</div>
+                <div class="aug-box aug-result">
+                    <div class="aug-icon">🎯</div>
+                    <div class="aug-label">3 Gợi ý phù hợp</div>
+                    <div class="aug-desc">Đúng gu, đúng túi tiền<br>an toàn dị ứng</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 4: PERSONAS ====== -->
+        <div class="slide" id="slide-3">
+            <div class="grid-lines"></div>
+            <span class="slide-number">03 · Đối tượng</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-orange animate-up delay-1">👥 User Segmentation</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,48px);">
+                3 Nhóm người dùng, <span class="highlight">3 Tone of Voice</span>
+            </h1>
+            <div class="persona-grid animate-up delay-3">
+                <div class="persona-card pupil">
+                    <div class="persona-emoji">🎒</div>
+                    <div class="persona-name">Học sinh</div>
+                    <div class="persona-budget pink">≤ 30.000đ</div>
+                    <div class="persona-desc">Trà sữa, ăn vặt, bánh tráng trộn, kem và đồ ngọt</div>
+                    <div class="persona-tone">"Hế lô cậu nhen! 😋 Bao ngon chuẩn gu luôn nè!"</div>
+                </div>
+                <div class="persona-card student">
+                    <div class="persona-emoji">🎓</div>
+                    <div class="persona-name">Sinh viên</div>
+                    <div class="persona-budget cyan">30k – 50.000đ</div>
+                    <div class="persona-desc">Cơm sườn no bụng, mì trộn, trà chanh giải nhiệt</div>
+                    <div class="persona-tone">"Chào đồng môn! 🔥 Bao no nê không sợ ví khóc!"</div>
+                </div>
+                <div class="persona-card office">
+                    <div class="persona-emoji">💼</div>
+                    <div class="persona-name">Văn phòng</div>
+                    <div class="persona-budget green">≥ 60.000đ</div>
+                    <div class="persona-desc">Cơm trưa đủ chất, salad healthy, cà phê tỉnh táo</div>
+                    <div class="persona-tone">"Chào anh/chị. Em gợi ý bữa trưa đầy đủ dinh dưỡng ạ."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 5: FEATURES ====== -->
+        <div class="slide" id="slide-4">
+            <div class="grid-lines"></div>
+            <span class="slide-number">04 · Tính năng</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-green animate-up delay-1">✨ Key Features</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Tính năng <span class="highlight">nổi bật</span>
+            </h1>
+            <div class="cards-row animate-up delay-3">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">Dual Banners</div>
+                    <div class="card-desc">Trang chủ hiển thị song song Banner Quảng cáo Deal Hot và Banner Trợ lý AI Tìm Món tăng CTR</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <div class="card-title">AI Chat Cá nhân hóa</div>
+                    <div class="card-desc">Chatbot trò chuyện tự nhiên, gợi ý 3 món phù hợp với ngân sách, khẩu vị và dị ứng</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">An toàn Dị ứng</div>
+                    <div class="card-desc">Bộ lọc cứng backend loại trừ món gây dị ứng và cảnh báo trực quan trên giao diện</div>
+                </div>
+            </div>
+            <div class="cards-row animate-up delay-4" style="margin-top: 16px;">
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-title">Custom AI Avatar</div>
+                    <div class="card-desc">Mascot Robot Cam độc quyền thay thế emoji mặc định, tạo nhận diện thương hiệu mạnh</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <div class="card-title">5-Tab Navigation</div>
+                    <div class="card-desc">Thanh điều hướng chuẩn app thực tế: Trang chủ, Yêu thích, Đơn hàng, Thông báo, Tôi</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-title">AI-Gen Quảng cáo</div>
+                    <div class="card-desc">Banner quảng cáo quán ăn được sinh bằng AI, click chuyển thẳng trang chi tiết món</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 6: SYSTEM ARCHITECTURE ====== -->
+        <div class="slide" id="slide-5">
+            <div class="grid-lines"></div>
+            <span class="slide-number">05 · Kiến trúc</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-cyan animate-up delay-1">⚙️ System Architecture</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Quy trình <span class="highlight-cyan">5 Giai Đoạn</span>
+            </h1>
+            <div class="flow-container animate-up delay-3">
+                <div class="flow-step">
+                    <div class="flow-step-icon">📊</div>
+                    <div class="flow-step-label">Feature Store</div>
+                </div>
+                <div class="flow-arrow">➜</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">🧠</div>
+                    <div class="flow-step-label">AI Classifier</div>
+                </div>
+                <div class="flow-arrow">➜</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">🎯</div>
+                    <div class="flow-step-label">Taste & Budget Matcher</div>
+                </div>
+                <div class="flow-arrow">➜</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">✍️</div>
+                    <div class="flow-step-label">GenAI Copywriter</div>
+                </div>
+                <div class="flow-arrow">➜</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">📱</div>
+                    <div class="flow-step-label">UI Dispatcher</div>
+                </div>
+            </div>
+            <p class="slide-subtitle animate-up delay-4" style="margin-top: 28px; font-size: 14px;">
+                Từ dữ liệu hành vi → phân loại AI → đề xuất món → biên soạn nội dung → hiển thị app + phản hồi
+            </p>
+        </div>
+
+        <!-- ====== SLIDE 7: TECH STACK ====== -->
+        <div class="slide" id="slide-6">
+            <div class="grid-lines"></div>
+            <span class="slide-number">06 · Công nghệ</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-orange animate-up delay-1">🛠️ Tech Stack</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Ngăn xếp <span class="highlight">công nghệ</span>
+            </h1>
+            <div class="tech-grid animate-up delay-3">
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div>
+                    <div class="tech-name">FastAPI</div>
+                    <div class="tech-role">Backend Server</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">💎</div>
+                    <div class="tech-name">Gemini Flash</div>
+                    <div class="tech-role">LLM AI Engine</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🌐</div>
+                    <div class="tech-name">HTML/CSS/JS</div>
+                    <div class="tech-role">SPA Frontend</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐍</div>
+                    <div class="tech-name">Python</div>
+                    <div class="tech-role">Backend Logic</div>
+                </div>
+            </div>
+            <div class="two-col animate-up delay-4">
+                <div>
+                    <div class="col-title">🔧 Backend API</div>
+                    <ul class="col-list">
+                        <li><strong>POST /api/chat</strong> — Chat AI cá nhân hóa</li>
+                        <li><strong>GET /api/foods</strong> — Catalog món ăn</li>
+                        <li><strong>GET /api/users/{id}</strong> — Hồ sơ persona</li>
+                        <li>Fallback Recommender khi không có API key</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="col-title">🎨 Frontend SPA</div>
+                    <ul class="col-list">
+                        <li>Single Page App với SPA Router</li>
+                        <li>Chatbox overlay không rời trang chủ</li>
+                        <li>Real-time typing indicator</li>
+                        <li>Responsive mobile-first design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 8: SAFETY ====== -->
+        <div class="slide" id="slide-7">
+            <div class="grid-lines"></div>
+            <span class="slide-number">07 · An toàn</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-green animate-up delay-1">🛡️ Safety & Guardrails</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Ràng buộc <span class="highlight">an toàn</span>
+            </h1>
+            <div class="safety-grid animate-up delay-3">
+                <div class="safety-card">
+                    <div class="safety-icon">💰</div>
+                    <div class="safety-title">Giới hạn ngân sách</div>
+                    <div class="safety-desc">Không gợi ý món vượt ngân sách persona. Học sinh ≤ 30k, Sinh viên 30-50k, Văn phòng ≥ 60k.</div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon">🌶️</div>
+                    <div class="safety-title">Lọc độ cay</div>
+                    <div class="safety-desc">Khi user yêu cầu "không cay", tự động loại bỏ tất cả các món cay khỏi danh sách đề xuất.</div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon">⚠️</div>
+                    <div class="safety-title">Cảnh báo dị ứng</div>
+                    <div class="safety-desc">Backend quét thành phần cứng (đậu phộng, sữa, trứng, hải sản, đậu nành) và cảnh báo trực quan.</div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon">🚫</div>
+                    <div class="safety-title">Chống Hallucination</div>
+                    <div class="safety-desc">AI không tự bịa tên quán, giá, rating. Mọi dữ liệu từ food_catalog đã kiểm chứng.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 9: DEMO FLOW ====== -->
+        <div class="slide" id="slide-8">
+            <div class="grid-lines"></div>
+            <span class="slide-number">08 · Demo</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-orange animate-up delay-1">🎬 Demo Script</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Kịch bản <span class="highlight">trình diễn</span>
+            </h1>
+            <div class="feature-list animate-up delay-3">
+                <div class="feature-item">
+                    <div class="feature-check">1</div>
+                    <div class="feature-text"><strong>Trang chủ nâng cấp:</strong> Dual Banners + 5-Tab Bottom Nav chuẩn ShopeeFood</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">2</div>
+                    <div class="feature-text"><strong>Campaign Redirect:</strong> Click Banner Deal Hot → Trang chi tiết Mì Trộn Hàng Xanh</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">3</div>
+                    <div class="feature-text"><strong>Bottom Nav Toast:</strong> Tab Yêu thích ❤️ và Thông báo 🔔 hiển thị toast mượt mà</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">4</div>
+                    <div class="feature-text"><strong>AI Chat cá nhân hóa:</strong> Chọn persona → Trò chuyện → Nhận 3 gợi ý + nút Ghé Quán</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">5</div>
+                    <div class="feature-text"><strong>Kết thúc:</strong> Quay lại trang chủ, xem chi tiết món ăn, đặt hàng thành công</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 10: AI PROMPT ENGINEERING ====== -->
+        <div class="slide" id="slide-9">
+            <div class="grid-lines"></div>
+            <span class="slide-number">09 · AI Prompt</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-cyan animate-up delay-1">🧠 Prompt Engineering</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                System Prompt <span class="highlight-cyan">thiết kế chỉn chu</span>
+            </h1>
+            <div class="cards-row animate-up delay-3">
+                <div class="card">
+                    <div class="card-icon">🎭</div>
+                    <div class="card-title">Identity & Scope</div>
+                    <div class="card-desc">Xác định rõ AI Copilot là trợ lý tìm món — không phải tài xế, CSKH, hay chuyên gia dinh dưỡng</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <div class="card-title">Output Contract</div>
+                    <div class="card-desc">Format markdown chuẩn: Lời chào → 3 gợi ý nhanh → Chi tiết món + ID → Cảnh báo dị ứng</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-title">Edge Cases</div>
+                    <div class="card-desc">Xử lý ý định mơ hồ, vòng lặp sửa lỗi, rủi ro dị ứng, và chống prompt injection</div>
+                </div>
+            </div>
+            <div class="cards-row animate-up delay-4" style="margin-top: 16px;">
+                <div class="card">
+                    <div class="card-icon">🗣️</div>
+                    <div class="card-title">Tone of Voice</div>
+                    <div class="card-desc">3 giọng nói hoàn toàn khác biệt: Teencode cho học sinh, trend mạng xã hội cho sinh viên, lịch sự chuyên nghiệp cho văn phòng</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🧪</div>
+                    <div class="card-title">Tool Policy</div>
+                    <div class="card-desc">Giả lập search_food_catalog() và get_user_profile() — luôn truy vấn trước khi đề xuất</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 11: ROADMAP ====== -->
+        <div class="slide" id="slide-10">
+            <div class="grid-lines"></div>
+            <span class="slide-number">10 · Lộ trình</span>
+            <span class="logo-corner">Shopee<span>Food</span> AI</span>
+            <div class="badge badge-green animate-up delay-1">🗺️ Roadmap</div>
+            <h1 class="slide-title animate-up delay-2" style="font-size: clamp(28px,3.5vw,44px);">
+                Kế hoạch <span class="highlight">phát triển</span>
+            </h1>
+            <div class="timeline animate-up delay-3">
+                <div class="timeline-item">
+                    <div class="timeline-phase">Sprint 1</div>
+                    <div class="timeline-title">🎨 UI/UX Design</div>
+                    <div class="timeline-desc">Figma Design System, High-Fidelity Mockups, Micro-animations & Mascot, Allergy Warning UI</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">Sprint 2</div>
+                    <div class="timeline-title">💻 Frontend</div>
+                    <div class="timeline-desc">React Native / Flutter setup, Dynamic Theme Engine, AI Assistant Interface</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">Sprint 3</div>
+                    <div class="timeline-title">⚙️ Backend & AI</div>
+                    <div class="timeline-desc">Feature Store DB, AI Classifier Service, Recommendation Engine, Gemini LLM Integration</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">Sprint 4</div>
+                    <div class="timeline-title">🧪 QA & Launch</div>
+                    <div class="timeline-desc">Functional Testing, Fail-safe Verification, CTR Feedback Pipeline, Production Deploy</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== SLIDE 12: THANK YOU ====== -->
+        <div class="slide" id="slide-11">
+            <div class="title-slide-bg"></div>
+            <div class="grid-lines"></div>
+            <div class="badge badge-orange animate-up delay-1">🎉 Cảm ơn</div>
+            <h1 class="slide-title animate-up delay-2">
+                <span class="highlight">Cảm ơn</span> đã lắng nghe!
+            </h1>
+            <p class="slide-subtitle animate-up delay-3">
+                ShopeeFood AI Personalized Suggestions — Biến quá tải lựa chọn thành trải nghiệm gợi ý cá nhân hóa, an toàn và thông minh.
+            </p>
+            <div class="aug-container animate-up delay-4" style="margin-top: 30px;">
+                <div class="stat-card" style="flex: 1;">
+                    <div class="stat-number" style="font-size: 32px; color: var(--shopee-orange);">🚀</div>
+                    <div class="stat-label">AI-Powered<br>Food Discovery</div>
+                </div>
+                <div class="stat-card" style="flex: 1;">
+                    <div class="stat-number" style="font-size: 32px; color: var(--accent-cyan);">🛡️</div>
+                    <div class="stat-label">Allergy-Safe<br>Recommendations</div>
+                </div>
+                <div class="stat-card" style="flex: 1;">
+                    <div class="stat-number" style="font-size: 32px; color: var(--accent-green);">🎯</div>
+                    <div class="stat-label">Personalized<br>Augmentation</div>
+                </div>
+            </div>
+            <button class="cta-btn animate-up delay-5" onclick="window.open('http://127.0.0.1:8000/', '_blank')">
+                🖥️ Xem Demo Trực Tiếp
+            </button>
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+        <button class="nav-btn" onclick="prevSlide()">◀</button>
+        <div class="nav-dots" id="navDots"></div>
+        <span class="slide-counter" id="slideCounter">1 / 12</span>
+        <button class="nav-btn" onclick="nextSlide()">▶</button>
+    </div>
+
+    <div class="keyboard-hint">
+        <kbd>←</kbd> <kbd>→</kbd> hoặc <kbd>Space</kbd> để chuyển slide
+    </div>
+
+    <script>
+        const TOTAL_SLIDES = 12;
+        let currentSlide = 0;
+        let isTransitioning = false;
+
+        // Build nav dots
+        const dotsContainer = document.getElementById('navDots');
+        for (let i = 0; i < TOTAL_SLIDES; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        function updateUI() {
+            // Update dots
+            document.querySelectorAll('.nav-dot').forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentSlide);
+            });
+
+            // Update counter
+            document.getElementById('slideCounter').textContent = `${currentSlide + 1} / ${TOTAL_SLIDES}`;
+
+            // Update progress bar
+            const progress = ((currentSlide + 1) / TOTAL_SLIDES) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function goToSlide(index) {
+            if (index === currentSlide || isTransitioning || index < 0 || index >= TOTAL_SLIDES) return;
+            isTransitioning = true;
+
+            const currentEl = document.getElementById(`slide-${currentSlide}`);
+            const nextEl = document.getElementById(`slide-${index}`);
+
+            const goingForward = index > currentSlide;
+
+            // Exit current
+            currentEl.classList.remove('active');
+            currentEl.classList.add(goingForward ? 'exit-left' : '');
+            currentEl.style.transform = goingForward ? 'translateX(-100px)' : 'translateX(100px)';
+            currentEl.style.opacity = '0';
+
+            // Prepare next
+            nextEl.style.transform = goingForward ? 'translateX(100px)' : 'translateX(-100px)';
+            nextEl.style.opacity = '0';
+            nextEl.classList.remove('exit-left');
+
+            // Reset animations for the next slide
+            nextEl.querySelectorAll('.animate-up').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+
+            setTimeout(() => {
+                currentEl.classList.remove('exit-left');
+                currentEl.style.transform = '';
+                currentEl.style.opacity = '';
+                currentEl.style.pointerEvents = 'none';
+
+                nextEl.classList.add('active');
+                nextEl.style.transform = '';
+                nextEl.style.opacity = '';
+
+                currentSlide = index;
+                updateUI();
+
+                setTimeout(() => {
+                    isTransitioning = false;
+                }, 100);
+            }, 50);
+        }
+
+        function nextSlide() {
+            if (currentSlide < TOTAL_SLIDES - 1) goToSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) goToSlide(currentSlide - 1);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                goToSlide(0);
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                goToSlide(TOTAL_SLIDES - 1);
+            }
+        });
+
+        // Touch/Swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+
+        // Initialize
+        updateUI();
+    </script>
+</body>
+</html>

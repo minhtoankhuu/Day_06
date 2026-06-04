@@ -1,0 +1,4344 @@
+{
+  "users": [
+    {
+      "id": "usr_student_01",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7765,
+        "lng": 106.6901
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá học sinh / Ăn vặt tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "trà sữa",
+          "nem chua rán",
+          "bánh tráng trộn",
+          "khoai tây lắc"
+        ],
+        "allergies": [
+          "peanut"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_student_02",
+      "cohort": "student",
+      "age": 15,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7766,
+        "lng": 106.6899
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 25000,
+        "label": "Đồng giá học sinh"
+      },
+      "preferences": {
+        "favorites": [
+          "sữa chua",
+          "bánh tráng cuộn",
+          "trà sữa thạch"
+        ],
+        "allergies": [],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_student_03",
+      "cohort": "student",
+      "age": 17,
+      "address": "THPT Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7788,
+        "lng": 106.6912
+      },
+      "budget_preference": {
+        "min": 20000,
+        "max": 35000,
+        "label": "Ăn vặt cổng trường"
+      },
+      "preferences": {
+        "favorites": [
+          "khoai tây lắc",
+          "gà rán",
+          "trà thái xanh"
+        ],
+        "allergies": [
+          "soy"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "chua",
+          "cay"
+        ]
+      }
+    },
+    {
+      "id": "usr_student_04",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7765,
+        "lng": 106.6901
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Ăn vặt tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "nem chua rán",
+          "phô mai que",
+          "trà thái đỏ"
+        ],
+        "allergies": [
+          "seafood"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_uni_01",
+      "cohort": "university",
+      "age": 20,
+      "address": "Ký túc xá Khu B ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8065
+      },
+      "budget_preference": {
+        "min": 30000,
+        "max": 50000,
+        "label": "Cơm bình dân bao no / Combo cày game"
+      },
+      "preferences": {
+        "favorites": [
+          "mì trộn",
+          "cơm sườn",
+          "bánh mì kẹp",
+          "trà chanh"
+        ],
+        "allergies": [
+          "seafood"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "cay",
+          "mặn"
+        ]
+      }
+    },
+    {
+      "id": "usr_uni_02",
+      "cohort": "university",
+      "age": 19,
+      "address": "KTX ĐH Bách Khoa, Lý Thường Kiệt, Q.10, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7725,
+        "lng": 106.6589
+      },
+      "budget_preference": {
+        "min": 30000,
+        "max": 45000,
+        "label": "Sinh viên tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "cơm tấm sườn",
+          "hủ tiếu gõ",
+          "trà chanh"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "ngọt",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_uni_03",
+      "cohort": "university",
+      "age": 21,
+      "address": "Ký túc xá Khu B ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.882,
+        "lng": 106.8066
+      },
+      "budget_preference": {
+        "min": 35000,
+        "max": 50000,
+        "label": "Cày đêm cày game"
+      },
+      "preferences": {
+        "favorites": [
+          "mì trộn phô mai",
+          "gà chiên nước mắm",
+          "trà đào"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "mặn",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_uni_04",
+      "cohort": "university",
+      "age": 22,
+      "address": "Khu KTX Đại Học Tự Nhiên, Nguyễn Văn Cừ, Q.5, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7624,
+        "lng": 106.6825
+      },
+      "budget_preference": {
+        "min": 25000,
+        "max": 40000,
+        "label": "Sinh viên healthy bình dân"
+      },
+      "preferences": {
+        "favorites": [
+          "bún chay",
+          "hủ tiếu chay",
+          "sữa chua"
+        ],
+        "allergies": [
+          "soy"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "thanh đạm"
+        ]
+      }
+    },
+    {
+      "id": "usr_uni_05",
+      "cohort": "university",
+      "age": 20,
+      "address": "Ký túc xá Khu B ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8064
+      },
+      "budget_preference": {
+        "min": 30000,
+        "max": 40000,
+        "label": "Bánh mì sinh viên tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "bánh mì thịt nướng",
+          "sữa đậu nành",
+          "trà thái xanh"
+        ],
+        "allergies": [
+          "wheat",
+          "gluten"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "cay",
+          "mặn"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_01",
+      "cohort": "office",
+      "age": 26,
+      "address": "Centec Tower, Nguyễn Thị Minh Khai, Q.3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7812,
+        "lng": 106.6963
+      },
+      "budget_preference": {
+        "min": 60000,
+        "max": 150000,
+        "label": "Cơm trưa văn phòng chất lượng / Healthy / Coffee họp nhóm"
+      },
+      "preferences": {
+        "favorites": [
+          "salad",
+          "eat clean",
+          "cà phê máy",
+          "bún chả",
+          "nước detox"
+        ],
+        "allergies": [
+          "peanut"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "chua",
+          "ngọt",
+          "thanh đạm"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_02",
+      "cohort": "office",
+      "age": 28,
+      "address": "Centec Tower, Nguyễn Thị Minh Khai, Q.3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7813,
+        "lng": 106.6962
+      },
+      "budget_preference": {
+        "min": 70000,
+        "max": 120000,
+        "label": "Cơm tấm chất lượng / Cà phê nhóm"
+      },
+      "preferences": {
+        "favorites": [
+          "cơm tấm sườn",
+          "cà phê phin",
+          "bánh sừng bò"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "mặn",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_03",
+      "cohort": "office",
+      "age": 25,
+      "address": "Lim Tower, Tôn Đức Thắng, Quận 1, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7795,
+        "lng": 106.7051
+      },
+      "budget_preference": {
+        "min": 65000,
+        "max": 130000,
+        "label": "Eat clean / Salad dinh dưỡng"
+      },
+      "preferences": {
+        "favorites": [
+          "salad",
+          "detox juice",
+          "bún gạo lứt"
+        ],
+        "allergies": [
+          "shellfish"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_04",
+      "cohort": "office",
+      "age": 32,
+      "address": "Bitexco Financial Tower, Hải Triều, Q.1, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7716,
+        "lng": 106.7044
+      },
+      "budget_preference": {
+        "min": 80000,
+        "max": 180000,
+        "label": "Cơm bento cao cấp / Bún chả chất lượng"
+      },
+      "preferences": {
+        "favorites": [
+          "bún chả",
+          "cơm bento",
+          "espresso"
+        ],
+        "allergies": [
+          "gluten"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "mặn",
+          "ngọt"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_05",
+      "cohort": "office",
+      "age": 29,
+      "address": "Centec Tower, Nguyễn Thị Minh Khai, Q.3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7812,
+        "lng": 106.6963
+      },
+      "budget_preference": {
+        "min": 60000,
+        "max": 110000,
+        "label": "Ăn nhẹ xế chiều / Coffee break"
+      },
+      "preferences": {
+        "favorites": [
+          "cà phê latte",
+          "bánh sừng bò",
+          "nước ép detox"
+        ],
+        "allergies": [
+          "peanut"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "chua",
+          "ngọt"
+        ]
+      }
+    },
+    {
+      "id": "usr_office_06",
+      "cohort": "office",
+      "age": 27,
+      "address": "Bitexco Financial Tower, Hải Triều, Q.1, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7715,
+        "lng": 106.7045
+      },
+      "budget_preference": {
+        "min": 80000,
+        "max": 150000,
+        "label": "Ăn chay organic / Salad văn phòng"
+      },
+      "preferences": {
+        "favorites": [
+          "salad chay",
+          "nước detox trái cây",
+          "bún gạo lứt"
+        ],
+        "allergies": [
+          "shellfish"
+        ],
+        "avoid_spicy": true,
+        "is_vegan": true,
+        "taste": [
+          "mặn",
+          "chua",
+          "thanh đạm"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_001",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7788,
+        "lng": 106.6912
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "bánh ngọt",
+          "nem chua",
+          "trà sữa"
+        ],
+        "allergies": [
+          "shellfish"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_002",
+      "cohort": "student",
+      "age": 16,
+      "address": "KTX Khu B ĐHQG, Dĩ An, Bình Dương",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8065
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 50000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "mì cay",
+          "mì trộn",
+          "nem chua"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "ngọt",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_003",
+      "cohort": "office",
+      "age": 28,
+      "address": "Bitexco Financial Tower, Hải Triều, Quận 1, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7716,
+        "lng": 106.7044
+      },
+      "budget_preference": {
+        "min": 60000,
+        "max": 150000,
+        "label": "Văn phòng chất lượng"
+      },
+      "preferences": {
+        "favorites": [
+          "detox",
+          "cà phê sạch",
+          "salad"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "chua",
+          "ngọt"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_004",
+      "cohort": "office",
+      "age": 28,
+      "address": "Bitexco Financial Tower, Hải Triều, Quận 1, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7716,
+        "lng": 106.7044
+      },
+      "budget_preference": {
+        "min": 60000,
+        "max": 150000,
+        "label": "Văn phòng chất lượng"
+      },
+      "preferences": {
+        "favorites": [
+          "ức gà",
+          "nước ép",
+          "detox"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "mặn",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_005",
+      "cohort": "student",
+      "age": 16,
+      "address": "KTX Khu A ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8065
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 50000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "cơm tấm",
+          "bánh mì",
+          "nem chua"
+        ],
+        "allergies": [],
+        "avoid_spicy": false,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_006",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7788,
+        "lng": 106.6912
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "sữa chua",
+          "bánh ngọt",
+          "bánh tráng"
+        ],
+        "allergies": [],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_007",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7765,
+        "lng": 106.6901
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "sữa chua",
+          "bánh tráng",
+          "bánh ngọt"
+        ],
+        "allergies": [],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_008",
+      "cohort": "student",
+      "age": 16,
+      "address": "KTX Khu A ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8065
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 50000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "mì cay",
+          "nem chua",
+          "cơm tấm"
+        ],
+        "allergies": [
+          "egg"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "chua",
+          "cay"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_009",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7765,
+        "lng": 106.6901
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "trà sữa",
+          "sữa chua",
+          "bánh ngọt"
+        ],
+        "allergies": [
+          "egg"
+        ],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_010",
+      "cohort": "student",
+      "age": 16,
+      "address": "KTX Khu A ĐHQG, Thủ Đức, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.8821,
+        "lng": 106.8065
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 50000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "mì cay",
+          "nem chua",
+          "bánh mì"
+        ],
+        "allergies": [
+          "gluten"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "ngọt",
+          "chua"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_011",
+      "cohort": "student",
+      "age": 16,
+      "address": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7765,
+        "lng": 106.6901
+      },
+      "budget_preference": {
+        "min": 15000,
+        "max": 30000,
+        "label": "Đồng giá tiết kiệm"
+      },
+      "preferences": {
+        "favorites": [
+          "bánh ngọt",
+          "trà sữa",
+          "sữa chua"
+        ],
+        "allergies": [],
+        "avoid_spicy": true,
+        "taste": [
+          "ngọt",
+          "béo"
+        ]
+      }
+    },
+    {
+      "id": "usr_user_012",
+      "cohort": "office",
+      "age": 28,
+      "address": "Centec Tower, Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "location_coordinates": {
+        "lat": 10.7788,
+        "lng": 106.6912
+      },
+      "budget_preference": {
+        "min": 60000,
+        "max": 150000,
+        "label": "Văn phòng chất lượng"
+      },
+      "preferences": {
+        "favorites": [
+          "ức gà",
+          "cơm tấm",
+          "salad"
+        ],
+        "allergies": [
+          "egg"
+        ],
+        "avoid_spicy": false,
+        "taste": [
+          "mặn",
+          "chua"
+        ]
+      }
+    }
+  ],
+  "banners": {
+    "student": {
+      "morning": {
+        "title": "ĂN SÁNG ĐỒNG GIÁ 19K - TỚI TRƯỜNG NHANH TRÍ",
+        "subtitle": "Freeship cổng trường, tiếp sức tiết học đầu tiên!"
+      },
+      "lunch": {
+        "title": "COMBO NĂNG LƯỢNG TRƯA - GIẢM NGAY 15K",
+        "subtitle": "Bữa trưa đầy đặn cùng bạn bè chỉ từ 30k. Khao Freeship!"
+      },
+      "afternoon": {
+        "title": "TAN TRƯỜNG TẬP TỤC - TRÀ SỮA ĐỒNG GIÁ 15K",
+        "subtitle": "Hết tiết rủ rê tụ tập, gọi ngay xiên bẩn trà sữa freeship!"
+      },
+      "night": {
+        "title": "HỌC BÀI ĐÊM KHUYA - BÁNH MÌ GIẢM 10K",
+        "subtitle": "Nạp năng lượng ôn thi, freeship tận cửa nhà!"
+      }
+    },
+    "university": {
+      "morning": {
+        "title": "COMBO TIẾT KIỆM SÁNG - CHỈ TỪ 25K",
+        "subtitle": "Cứu đói giảng đường, giảm 15% khi thanh toán ShopeePay!"
+      },
+      "lunch": {
+        "title": "CƠM TRƯA BAO NO - GIẢM NGAY 20%",
+        "subtitle": "Đặt nhóm share ship, cơm tấm, mì trộn khao lớn chỉ từ 35k!"
+      },
+      "afternoon": {
+        "title": "MUA 1 TẶNG 1 DUNG TÍCH LỚN 1 LÍT",
+        "subtitle": "Giải nhiệt chiều hè cực đã, khao mua 1 tặng 1 ship KTX cực lẹ!"
+      },
+      "night": {
+        "title": "TIẾP SỨC ĐÊM MUỘN - CÀY GAME BAO CHÁY",
+        "subtitle": "Combo mì trộn xúc xích + trà chanh giảm 25% phục vụ tới 1h sáng!"
+      }
+    },
+    "office": {
+      "morning": {
+        "title": "BẮT ĐẦU NGÀY MỚI CÙNG LATTE NĂNG LƯỢNG",
+        "subtitle": "Cà phê Highlands, Starbucks giao nhanh 10 phút, khao ngay 20k ship!"
+      },
+      "lunch": {
+        "title": "LUNCH ĐỒNG NGHIỆP - ĐẶT NHÓM GIẢM NGAY 50K",
+        "subtitle": "Bữa trưa dinh dưỡng, bún chả, cơm tấm cao cấp. Giao đúng giờ ăn trưa!"
+      },
+      "afternoon": {
+        "title": "CHIỀU THANH LỌC - NƯỚC ÉP DETOX & FRUITS",
+        "subtitle": "Bánh ngọt nhẹ nhàng, trà detox healthy cho buổi chiều tỉnh táo làm việc!"
+      },
+      "night": {
+        "title": "TĂNG CA MUỘN - SHOPEEFOOD KHAO ĂN TỐI LẨU BENTO",
+        "subtitle": "Hỗ trợ xuất hóa đơn đỏ VAT cho doanh nghiệp, lẩu nóng bento giao tận công sở!"
+      }
+    }
+  },
+  "push_notifications": {
+    "student": {
+      "morning": {
+        "title": "🎒 Đi học thôi! Ăn sáng chưa nè?",
+        "body": "Bánh mì pate trứng đồng giá 19k. Giao thẳng cổng trường kịp giờ truy bài nha!"
+      },
+      "lunch": {
+        "title": "🍱 Trưa rồi, tụ họp ăn gì ngon bổ rẻ?",
+        "body": "Cơm chiên đùi gà xối mỡ chỉ từ 29k cho học sinh Lê Quý Đôn. Freeship luôn nhen!"
+      },
+      "afternoon": {
+        "title": "🧋 Tan học rồi! Làm ly trà sữa xả stress?",
+        "body": "Trà sữa thái xanh trân châu gấu 15k ship thần tốc tới cổng trường Lê Quý Đôn. Đặt ngay!"
+      },
+      "night": {
+        "title": "📚 Học bài khuya đói bụng không bạn ơi?",
+        "body": "Bánh mì xúc xích phô mai que đồng giá 15k tiếp sức ôn thi đêm muộn. Order ngay nhen!"
+      }
+    },
+    "university": {
+      "morning": {
+        "title": "🎓 Cứu đói giảng đường sáng nay!",
+        "body": "Xôi mặn chà bông siêu to khổng lồ giảm 15k. Ăn nhanh kịp ca học mới nè đồng môn!"
+      },
+      "lunch": {
+        "title": "🍛 Trưa nay ăn gì no nê ví không khóc?",
+        "body": "Cơm sườn rim trứng ốp la giảm 20% + áp mã freeship. Rủ nhóm bạn KTX đặt chung đỡ tiền ship nào!"
+      },
+      "afternoon": {
+        "title": "🍋 Buồn ngủ quá? Làm ly trà đào 1 lít giải nhiệt?",
+        "body": "Ưu đãi mua 1 tặng 1 từ các quán quanh khu đô thị ĐHQG. Ship KTX cực lẹ trong 15 phút!"
+      },
+      "night": {
+        "title": "🎮 Trận game chưa dứt mà bụng kêu gào?",
+        "body": "Combo mì trộn xúc xích phô mai giảm 25% phục vụ cú đêm cày game. Order liền tay!"
+      }
+    },
+    "office": {
+      "morning": {
+        "title": "☕ Ly cà phê nạp năng lượng ngày mới?",
+        "body": "Highlands phin sữa đá và croissant phô mai giảm 29%, giao nhanh 8 phút tận tay trước 9h sáng!"
+      },
+      "lunch": {
+        "title": "🥗 Bữa trưa Eat Clean dinh dưỡng nạp năng lượng",
+        "body": "Salad ức gà mè rang chuẩn vị organic giảm 20k khi đặt nhóm. Giao đúng giờ ăn trưa văn phòng!"
+      },
+      "afternoon": {
+        "title": "🍎 Tiệc trà detox xế chiều cùng đồng nghiệp?",
+        "body": "Bánh ngọt ngọt ngào và nước ép thanh lọc cơ thể giảm 20%. Order xả stress thôi anh chị ơi!"
+      },
+      "night": {
+        "title": "💼 Hôm nay tăng ca muộn? Đừng quên ăn tối!",
+        "body": "Set cơm tấm sườn dày dặn hoặc cháo ếch Singapore nóng hổi khao 25k hỗ trợ tăng ca tối hiệu quả."
+      }
+    }
+  },
+  "restaurants": [
+    {
+      "id": "res_student_breakfast",
+      "name": "Bánh Mì Pate Trứng Cổng Trường - Lê Quý Đôn",
+      "cuisine": "Bánh mì, Bữa sáng nhanh",
+      "rating": 4.6,
+      "distance_km": 0.3,
+      "eta_minutes": 8,
+      "address": "110 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_bread_pate",
+          "name": "Bánh mì chả lụa pate trứng",
+          "price_old": 25000,
+          "price_new": 19000,
+          "discount_label": "Đồng giá sáng 19k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh mì",
+            "pate heo",
+            "trứng ốp la",
+            "chả lụa",
+            "bơ trứng",
+            "dưa leo"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh mì chả lụa pate trứng - ảnh minh họa banhMi cho nhóm Bánh mì, Bữa sáng nhanh"
+        }
+      ]
+    },
+    {
+      "id": "res_student_sweet",
+      "name": "Sữa Chua Trân Châu Hạ Long - Nguyễn Tri Phương",
+      "cuisine": "Sữa chua, Trà sữa, Ăn vặt",
+      "rating": 4.8,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "258 Nguyễn Tri Phương, Quận 10, TP.HCM",
+      "menu": [
+        {
+          "id": "item_yogurt_coconut",
+          "name": "Sữa chua trân châu cốt dừa",
+          "price_old": 25000,
+          "price_new": 15000,
+          "discount_label": "Giảm 40%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "sữa chua",
+            "cốt dừa",
+            "trân châu trắng",
+            "dừa khô"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sữa chua trân châu cốt dừa - ảnh minh họa dessert cho nhóm Sữa chua, Trà sữa, Ăn vặt"
+        },
+        {
+          "id": "item_yogurt_fruit",
+          "name": "Sữa chua trái cây tươi",
+          "price_old": 30000,
+          "price_new": 22000,
+          "discount_label": "Giảm 26%",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "sữa chua",
+            "dâu tây",
+            "kiwi",
+            "xoài",
+            "hạt chia"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sữa chua trái cây tươi - ảnh minh họa dessert cho nhóm Sữa chua, Trà sữa, Ăn vặt"
+        },
+        {
+          "id": "item_test_egg_flan",
+          "name": "Bánh flan trứng sữa caramel thơm ngon",
+          "price_old": 20000,
+          "price_new": 15000,
+          "discount_label": "Giảm 25%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trứng gà tươi",
+            "sữa đặc",
+            "đường cát",
+            "caramel",
+            "vani"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1505253210343-005f754b8b96?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh flan trứng sữa caramel thơm ngon - ảnh minh họa dessert cho nhóm Sữa chua, Trà sữa, Ăn vặt"
+        }
+      ]
+    },
+    {
+      "id": "res_student_snack",
+      "name": "Ăn Vặt 176 - Cổng Trường Lê Quý Đôn",
+      "cuisine": "Nem chua rán, Xiên bẩn, Khoai tây lắc",
+      "rating": 4.7,
+      "distance_km": 0.4,
+      "eta_minutes": 10,
+      "address": "176 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM (Đối diện cổng trường)",
+      "menu": [
+        {
+          "id": "item_nem_ran",
+          "name": "Mẹt Nem Chua Rán + Khoai Tây Chiên",
+          "price_old": 40000,
+          "price_new": 28000,
+          "discount_label": "Giảm 30%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "nem chua thịt heo",
+            "bột chiên xù",
+            "khoai tây",
+            "phô mai"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mẹt Nem Chua Rán + Khoai Tây Chiên - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_xien_ban",
+          "name": "Mẹt cá viên chiên nước mắm siêu cay",
+          "price_old": 35000,
+          "price_new": 25000,
+          "discount_label": "Đồng giá 25k",
+          "spicy_level": 3,
+          "is_healthy": false,
+          "ingredients": [
+            "cá viên",
+            "tôm viên",
+            "tỏi",
+            "ớt hiểm",
+            "nước mắm"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mẹt cá viên chiên nước mắm siêu cay - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_cheese_sticks",
+          "name": "Phô mai que chiên giòn",
+          "price_old": 20000,
+          "price_new": 15000,
+          "discount_label": "Học sinh 15k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai mozzarella",
+            "bột chiên giòn",
+            "bơ"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phô mai que chiên giòn - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_food_002",
+          "name": "Cá Viên Chiên Nước Mắm #8",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "cá viên chiên nước mắm #8"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cá Viên Chiên Nước Mắm #8 - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_food_021",
+          "name": "Cá Viên Chiên Nước Mắm #7",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cá viên chiên nước mắm #7",
+            "bột mì",
+            "gluten"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cá Viên Chiên Nước Mắm #7 - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_food_026",
+          "name": "Nem Chua Rán Hà Nội #5",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "nem chua rán hà nội #5"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nem Chua Rán Hà Nội #5 - ảnh minh họa snack cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        },
+        {
+          "id": "item_test_shellfish_clams",
+          "name": "Nghêu hấp sả ớt cay nồng (giáp xác/shellfish)",
+          "price_old": 35000,
+          "price_new": 28000,
+          "discount_label": "Đồng giá ăn vặt",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "nghêu biển nguyên con (shellfish)",
+            "tôm khô",
+            "sả cây giập",
+            "ớt hiểm",
+            "nước dùng ngọt thanh"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nghêu hấp sả ớt cay nồng (giáp xác/shellfish) - ảnh minh họa seafood cho nhóm Nem chua rán, Xiên bẩn, Khoai tây lắc"
+        }
+      ]
+    },
+    {
+      "id": "res_student_tea",
+      "name": "Trà Sữa Nhà Làm Vy Vy - Chi nhánh Quận 3",
+      "cuisine": "Trà sữa, Hồng trà, Thạch gấu",
+      "rating": 4.6,
+      "distance_km": 1.2,
+      "eta_minutes": 15,
+      "address": "45 Điện Biên Phủ, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_milktea_bear",
+          "name": "Combo Trà Sữa Thái Xanh Size L + Thạch Gấu",
+          "price_old": 30000,
+          "price_new": 19000,
+          "discount_label": "Đồng giá 19k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà thái xanh",
+            "sữa đặc",
+            "bột béo",
+            "thạch gấu gelatin"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Combo Trà Sữa Thái Xanh Size L + Thạch Gấu - ảnh minh họa milkTea cho nhóm Trà sữa, Hồng trà, Thạch gấu"
+        },
+        {
+          "id": "item_test_milk_cheese",
+          "name": "Trà sữa trân châu kem cheese sữa tươi",
+          "price_old": 35000,
+          "price_new": 28000,
+          "discount_label": "Học sinh 28k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà đen",
+            "sữa tươi tiệt trùng (động vật)",
+            "bột sữa",
+            "kem cheese béo ngậy",
+            "trân châu đường đen"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà sữa trân châu kem cheese sữa tươi - ảnh minh họa milkTea cho nhóm Trà sữa, Hồng trà, Thạch gấu"
+        }
+      ]
+    },
+    {
+      "id": "res_student_chicken",
+      "name": "Gà Rán Mr. Thịnh - Chi nhánh Quận 3",
+      "cuisine": "Gà rán, Thức ăn nhanh",
+      "rating": 4.7,
+      "distance_km": 0.5,
+      "eta_minutes": 11,
+      "address": "12 Cống Quỳnh, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_fried_chicken",
+          "name": "Combo Gà Rán Giòn Rụm + Pepsi",
+          "price_old": 40000,
+          "price_new": 29000,
+          "discount_label": "Giảm 27%",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "thịt gà phi lê",
+            "bột mì",
+            "bột tỏi",
+            "pepsi"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Combo Gà Rán Giòn Rụm + Pepsi - ảnh minh họa chicken cho nhóm Gà rán, Thức ăn nhanh"
+        }
+      ]
+    },
+    {
+      "id": "res_student_chatramue",
+      "name": "Trà Sữa Thái Lan ChaTraMue - Võ Văn Tần",
+      "cuisine": "Trà thái, Trà sữa",
+      "rating": 4.8,
+      "distance_km": 0.7,
+      "eta_minutes": 10,
+      "address": "320 Võ Văn Tần, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_thai_red_tea",
+          "name": "Trà Thái Đỏ truyền thống cốt dừa",
+          "price_old": 35000,
+          "price_new": 25000,
+          "discount_label": "Học sinh 25k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà thái đỏ",
+            "nước cốt dừa",
+            "sữa đặc",
+            "đường"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà Thái Đỏ truyền thống cốt dừa - ảnh minh họa milkTea cho nhóm Trà thái, Trà sữa"
+        }
+      ]
+    },
+    {
+      "id": "res_student_banhtrang",
+      "name": "Bánh Tráng Trộn Cô Long - Q.3",
+      "cuisine": "Bánh tráng trộn, Ăn vặt",
+      "rating": 4.6,
+      "distance_km": 0.6,
+      "eta_minutes": 10,
+      "address": "40 Nguyễn Thượng Hiền, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_banh_trang_roll",
+          "name": "Bánh tráng cuốn bơ tép khô",
+          "price_old": 28000,
+          "price_new": 20000,
+          "discount_label": "Giảm 8k",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh tráng gạo (gluten-free)",
+            "tép khô",
+            "hành phi",
+            "bơ trứng",
+            "xoài xanh"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh tráng cuốn bơ tép khô - ảnh minh họa snack cho nhóm Bánh tráng trộn, Ăn vặt"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_xoi",
+      "name": "Xôi Mặn Bình Dân KTX ĐHQG - Thủ Đức",
+      "cuisine": "Xôi mặn, Bữa sáng sinh viên",
+      "rating": 4.7,
+      "distance_km": 0.5,
+      "eta_minutes": 9,
+      "address": "Cổng sau KTX Khu B, Thủ Đức",
+      "menu": [
+        {
+          "id": "item_sticky_rice",
+          "name": "Xôi mặn chà bông lạp xưởng trứng cút",
+          "price_old": 25000,
+          "price_new": 20000,
+          "discount_label": "Giảm 5k",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo nếp",
+            "chà bông heo",
+            "lạp xưởng",
+            "trứng cút",
+            "mỡ hành",
+            "tép rang"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Xôi mặn chà bông lạp xưởng trứng cút - ảnh minh họa rice cho nhóm Xôi mặn, Bữa sáng sinh viên"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_noodle",
+      "name": "Mì Trộn & Cơm Chiên Gió Lộng - Thủ Đức",
+      "cuisine": "Mì trộn Indomie, Cơm chiên xá xíu",
+      "rating": 4.7,
+      "distance_km": 1.6,
+      "eta_minutes": 18,
+      "address": "Đường số 6, Linh Trung, Thủ Đức, TP.HCM",
+      "menu": [
+        {
+          "id": "item_noodle_indomie",
+          "name": "Combo Mì Trộn Indomie Xúc Xích Phô Mai",
+          "price_old": 45000,
+          "price_new": 33700,
+          "discount_label": "Giảm 25%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "mì indomie (bột mì, gluten)",
+            "xúc xích heo",
+            "phô mai cheddar",
+            "tương ớt",
+            "hành phi"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Combo Mì Trộn Indomie Xúc Xích Phô Mai - ảnh minh họa noodle cho nhóm Mì trộn Indomie, Cơm chiên xá xíu"
+        },
+        {
+          "id": "item_indomie_spicy",
+          "name": "Mì Trộn Indomie xốt ớt cay xé lưỡi",
+          "price_old": 35000,
+          "price_new": 28000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 3,
+          "is_healthy": false,
+          "ingredients": [
+            "mì indomie (bột mì, gluten)",
+            "ớt bột siêu cay",
+            "xốt ớt hiểm",
+            "tỏi",
+            "chả cá"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Indomie xốt ớt cay xé lưỡi - ảnh minh họa noodle cho nhóm Mì trộn Indomie, Cơm chiên xá xíu"
+        },
+        {
+          "id": "item_test_wheat_noodle",
+          "name": "Mì trộn Indomie xốt phô mai trứng lòng đào (chứa bột mì/gluten)",
+          "price_old": 45000,
+          "price_new": 38000,
+          "discount_label": "Đồng giá trưa",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "sợi mì gói Indomie (bột mì)",
+            "gluten",
+            "xúc xích heo",
+            "phô mai lát",
+            "trứng lòng đào"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì trộn Indomie xốt phô mai trứng lòng đào (chứa bột mì/gluten) - ảnh minh họa noodle cho nhóm Mì trộn Indomie, Cơm chiên xá xíu"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_rice",
+      "name": "Cơm Tấm Sinh Viên ĐHQG - Đường số 8",
+      "cuisine": "Cơm tấm sườn, trứng, chả",
+      "rating": 4.9,
+      "distance_km": 1.1,
+      "eta_minutes": 15,
+      "address": "Số 8 Đường Tân Lập, KTX Khu B, Thủ Đức",
+      "menu": [
+        {
+          "id": "item_rice_suon",
+          "name": "Cơm Sườn Non Rim Trứng Ốp La",
+          "price_old": 38000,
+          "price_new": 30400,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo tấm",
+            "sườn cốt lết rim ngọt",
+            "trứng gà",
+            "nước mắm ngọt",
+            "mỡ hành"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Sườn Non Rim Trứng Ốp La - ảnh minh họa rice cho nhóm Cơm tấm sườn, trứng, chả"
+        },
+        {
+          "id": "item_rice_egg",
+          "name": "Cơm Tấm Trứng Ốp La Bì Chả",
+          "price_old": 25000,
+          "price_new": 20000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo tấm",
+            "trứng gà ốp la",
+            "bì heo",
+            "chả chưng",
+            "mỡ hành",
+            "nước mắm ngọt"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Trứng Ốp La Bì Chả - ảnh minh họa rice cho nhóm Cơm tấm sườn, trứng, chả"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_lemon_tea",
+      "name": "Trà Chanh Sinh Viên Vỉa Hè KTX - Thủ Đức",
+      "cuisine": "Trà chanh, Đồ uống",
+      "rating": 4.5,
+      "distance_km": 0.3,
+      "eta_minutes": 7,
+      "address": "Đường nội bộ KTX Khu B, Thủ Đức",
+      "menu": [
+        {
+          "id": "item_lemon_tea_1l",
+          "name": "Ly trà chanh khổng lồ 1 Lít",
+          "price_old": 18000,
+          "price_new": 10000,
+          "discount_label": "Mua 1 tặng 1",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà nhài",
+            "chanh tươi",
+            "đường",
+            "nước đá"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Ly trà chanh khổng lồ 1 Lít - ảnh minh họa juice cho nhóm Trà chanh, Đồ uống"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_hutieu",
+      "name": "Hủ Tiếu Gõ Đêm KTX ĐHQG - Thủ Đức",
+      "cuisine": "Hủ tiếu, Ăn tối muộn",
+      "rating": 4.7,
+      "distance_km": 0.3,
+      "eta_minutes": 8,
+      "address": "Cạnh bến xe buýt KTX Khu B, Thủ Đức",
+      "menu": [
+        {
+          "id": "item_hu_tieu_go",
+          "name": "Tô Hủ Tiếu Gõ sườn heo viên mọc",
+          "price_old": 38000,
+          "price_new": 32000,
+          "discount_label": "Đồng giá 32k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "sợi hủ tiếu gạo",
+            "sườn heo",
+            "mọc viên",
+            "nước lèo hầm xương",
+            "hẹ",
+            "giá đỗ"
+          ],
+          "suitable_times": [
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Tô Hủ Tiếu Gõ sườn heo viên mọc - ảnh minh họa soup cho nhóm Hủ tiếu, Ăn tối muộn"
+        },
+        {
+          "id": "item_test_seafood_soup",
+          "name": "Súp hải sản thập cẩm tôm mực sườn non",
+          "price_old": 45000,
+          "price_new": 38000,
+          "discount_label": "Đồng giá tối 38k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "nước lèo hải sản",
+            "tôm sú tươi",
+            "mực ống thái khoanh",
+            "sườn non heo",
+            "nấm rơm",
+            "hẹ"
+          ],
+          "suitable_times": [
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Súp hải sản thập cẩm tôm mực sườn non - ảnh minh họa seafood cho nhóm Hủ tiếu, Ăn tối muộn"
+        },
+        {
+          "id": "item_test_seafood_noodle",
+          "name": "Hủ tiếu tôm mực nước dùng sườn heo",
+          "price_old": 42000,
+          "price_new": 35000,
+          "discount_label": "Giảm 7k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "sợi hủ tiếu",
+            "tôm luộc vỏ sạch",
+            "mực luộc",
+            "nước dùng sườn",
+            "giá hẹ",
+            "hành phi"
+          ],
+          "suitable_times": [
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Hủ tiếu tôm mực nước dùng sườn heo - ảnh minh họa seafood cho nhóm Hủ tiếu, Ăn tối muộn"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_comga",
+      "name": "Cơm Gà Chiên Mắm Xối Mỡ KTX - Thủ Đức",
+      "cuisine": "Cơm gà xối mỡ, Cơm chiên",
+      "rating": 4.6,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "15 Tân Lập, Thủ Đức, TP.HCM",
+      "menu": [
+        {
+          "id": "item_chicken_rice_fishsauce",
+          "name": "Cơm Đùi Gà Chiên Nước Mắm giòn béo",
+          "price_old": 48000,
+          "price_new": 38000,
+          "discount_label": "Giảm 10k",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm chiên tỏi",
+            "đùi gà chiên giòn",
+            "nước mắm tỏi ớt hiểm ngọt",
+            "dưa leo"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Đùi Gà Chiên Nước Mắm giòn béo - ảnh minh họa rice cho nhóm Cơm gà xối mỡ, Cơm chiên"
+        }
+      ]
+    },
+    {
+      "id": "res_uni_chaysala",
+      "name": "Chay Sala - Thủ Đức",
+      "cuisine": "Đồ ăn chay, Healthy",
+      "rating": 4.8,
+      "distance_km": 1.3,
+      "eta_minutes": 15,
+      "address": "52 Đường số 10, Linh Trung, Thủ Đức",
+      "menu": [
+        {
+          "id": "item_vegan_noodle_sala",
+          "name": "Tô Hủ Tiếu Chay nấm linh chi rau củ quả",
+          "price_old": 42000,
+          "price_new": 35000,
+          "discount_label": "Giảm 7k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "hủ tiếu gạo (gluten-free)",
+            "nấm đùi gà",
+            "nấm linh chi",
+            "rau cải",
+            "cà rốt",
+            "nước dùng củ quả hồng sâm",
+            "không đậu nành"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Tô Hủ Tiếu Chay nấm linh chi rau củ quả - ảnh minh họa soup cho nhóm Đồ ăn chay, Healthy"
+        },
+        {
+          "id": "item_test_soy_tofu",
+          "name": "Đậu hũ kho nấm linh chi xốt tương tỏi ớt",
+          "price_old": 35000,
+          "price_new": 28000,
+          "discount_label": "Combo cơm chay",
+          "spicy_level": 2,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu hũ chiên",
+            "nấm linh chi",
+            "nước tương đậu nành",
+            "tỏi",
+            "ớt hiểm",
+            "hành lá"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Đậu hũ kho nấm linh chi xốt tương tỏi ớt - ảnh minh họa healthy cho nhóm Đồ ăn chay, Healthy"
+        }
+      ]
+    },
+    {
+      "id": "res_office_pho",
+      "name": "Phở Bò Hà Nội Gia Truyền - Nguyễn Thị Minh Khai",
+      "cuisine": "Phở bò, Bữa sáng truyền thống",
+      "rating": 4.8,
+      "distance_km": 0.6,
+      "eta_minutes": 10,
+      "address": "150 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_pho_bo",
+          "name": "Phở bò chín/tái thơm ngon nóng hổi",
+          "price_old": 75000,
+          "price_new": 60000,
+          "discount_label": "Ưu đãi sáng giảm 20%",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bánh phở",
+            "nước dùng bò",
+            "thịt bò tơ",
+            "hành lá",
+            "gừng",
+            "quế",
+            "hồi"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phở bò chín/tái thơm ngon nóng hổi - ảnh minh họa soup cho nhóm Phở bò, Bữa sáng truyền thống"
+        }
+      ]
+    },
+    {
+      "id": "res_office_buncha",
+      "name": "Bún Chả Hà Nội Xưa - Quận 3",
+      "cuisine": "Bún chả Hà Nội, Đặc sản",
+      "rating": 4.8,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "85 Võ Văn Tần, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_bun_cha_hanoi",
+          "name": "Suất Bún Chả đặc biệt (không đậu phộng)",
+          "price_old": 80000,
+          "price_new": 65000,
+          "discount_label": "Giảm 15k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bún gạo tươi",
+            "chả viên nướng than",
+            "thịt ba chỉ nướng",
+            "nước mắm tỏi ớt chua ngọt",
+            "đu đủ xanh",
+            "rau kinh giới",
+            "rau xà lách"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Suất Bún Chả đặc biệt (không đậu phộng) - ảnh minh họa soup cho nhóm Bún chả Hà Nội, Đặc sản"
+        },
+        {
+          "id": "item_food_006",
+          "name": "Bún Đậu Mắm Tôm Mẹt #4",
+          "price_old": 48000,
+          "price_new": 39000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "đậu phộng rắc",
+            "bún đậu mắm tôm mẹt #4"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún Đậu Mắm Tôm Mẹt #4 - ảnh minh họa seafood cho nhóm Bún chả Hà Nội, Đặc sản"
+        },
+        {
+          "id": "item_food_010",
+          "name": "Bún Chả Hà Nội Đặc Biệt #9",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "đậu phộng rắc",
+            "bún chả hà nội đặc biệt #9"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún Chả Hà Nội Đặc Biệt #9 - ảnh minh họa soup cho nhóm Bún chả Hà Nội, Đặc sản"
+        },
+        {
+          "id": "item_test_peanut_buncha",
+          "name": "Bún thịt nướng chả giò đặc biệt (có đậu phộng)",
+          "price_old": 60000,
+          "price_new": 48000,
+          "discount_label": "Đồng giá trưa",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bún tươi",
+            "thịt nướng",
+            "chả giò chiên giòn",
+            "đậu phộng rang giã",
+            "mỡ hành",
+            "nước mắm chua ngọt"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún thịt nướng chả giò đặc biệt (có đậu phộng) - ảnh minh họa soup cho nhóm Bún chả Hà Nội, Đặc sản"
+        }
+      ]
+    },
+    {
+      "id": "res_office_salad",
+      "name": "Green & Clean - Healthy Food Lab",
+      "cuisine": "Salad organic, Eat clean, Bún gạo lứt",
+      "rating": 4.9,
+      "distance_km": 1.2,
+      "eta_minutes": 15,
+      "address": "120/5 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_salad_chicken",
+          "name": "Salad Ức Gà Sốt Mè Rang Nhật Bản",
+          "price_old": 85000,
+          "price_new": 68000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "ức gà áp chảo",
+            "xà lách búp",
+            "cà chua bi",
+            "bắp ngọt",
+            "sốt mè rang",
+            "đậu phộng rắc"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Ức Gà Sốt Mè Rang Nhật Bản - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_beef_roll",
+          "name": "Cuộn xà lách bò tơ nướng tỏi",
+          "price_old": 90000,
+          "price_new": 72000,
+          "discount_label": "Freeship",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bò tơ áp chảo",
+            "xà lách",
+            "dưa leo",
+            "nước tương tỏi"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cuộn xà lách bò tơ nướng tỏi - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_salad_vegan",
+          "name": "Salad Thuần Chay Sốt Trái Cây Thanh Đạm",
+          "price_old": 75000,
+          "price_new": 60000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "xà lách búp",
+            "xoài chín",
+            "bơ sáp",
+            "cà chua bi",
+            "hạt điều",
+            "sốt dầu giấm chanh leo"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Thuần Chay Sốt Trái Cây Thanh Đạm - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_food_003",
+          "name": "Salad Ức Gà Áp Chảo #8",
+          "price_old": 68000,
+          "price_new": 55000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu phộng rắc",
+            "salad ức gà áp chảo #8"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Ức Gà Áp Chảo #8 - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_food_020",
+          "name": "Salad Bơ Trứng Sốt Mè Rang #4",
+          "price_old": 93000,
+          "price_new": 75000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu phộng rắc",
+            "salad bơ trứng sốt mè rang #4"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Bơ Trứng Sốt Mè Rang #4 - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_food_037",
+          "name": "Salad Ức Gà Áp Chảo #6",
+          "price_old": 68000,
+          "price_new": 55000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu phộng rắc",
+            "salad ức gà áp chảo #6"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Ức Gà Áp Chảo #6 - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        },
+        {
+          "id": "item_test_peanut_salad",
+          "name": "Salad gà nướng xốt đậu phộng Thái",
+          "price_old": 85000,
+          "price_new": 68000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 1,
+          "is_healthy": true,
+          "ingredients": [
+            "ức gà nướng",
+            "xà lách búp",
+            "dưa leo",
+            "bắp ngọt",
+            "sốt đậu phộng",
+            "đậu phộng giã nhuyễn"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad gà nướng xốt đậu phộng Thái - ảnh minh họa soup cho nhóm Salad organic, Eat clean, Bún gạo lứt"
+        }
+      ]
+    },
+    {
+      "id": "res_office_healthy_sen",
+      "name": "Bếp Thực Dưỡng Hoa Sen - Healthy Life",
+      "cuisine": "Thực dưỡng, Cơm lứt, Salad",
+      "rating": 4.8,
+      "distance_km": 1,
+      "eta_minutes": 14,
+      "address": "48 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_brown_rice_chicken",
+          "name": "Bún gạo lứt trộn ức gà nướng sốt cam",
+          "price_old": 98000,
+          "price_new": 78000,
+          "discount_label": "Văn phòng giảm 20k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bún gạo lứt",
+            "ức gà nướng mật ong",
+            "xà lách búp",
+            "cà rốt bào",
+            "sốt cam tươi nguyên chất",
+            "hạt mè rang"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún gạo lứt trộn ức gà nướng sốt cam - ảnh minh họa soup cho nhóm Thực dưỡng, Cơm lứt, Salad"
+        }
+      ]
+    },
+    {
+      "id": "res_office_rice",
+      "name": "Cơm Tấm Cali - Chi nhánh Nguyễn Thị Minh Khai",
+      "cuisine": "Cơm tấm sườn dày chất lượng cao",
+      "rating": 4.8,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "Centec Tower Plaza, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_rice_cali",
+          "name": "Cơm Tấm Sườn Cốt Lết Rim Ngọt + Canh Khổ Qua",
+          "price_old": 95000,
+          "price_new": 75000,
+          "discount_label": "Giảm 21k & Freeship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo tấm thơm",
+            "sườn cốt lết dày rim mật ong",
+            "khổ qua dồn thịt",
+            "đồ chua",
+            "nước mắm ớt nhẹ"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Sườn Cốt Lết Rim Ngọt + Canh Khổ Qua - ảnh minh họa rice cho nhóm Cơm tấm sườn dày chất lượng cao"
+        },
+        {
+          "id": "item_food_004",
+          "name": "Cơm Tấm Sườn Cốt Lết Rim #2",
+          "price_old": 106000,
+          "price_new": 85000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm tấm sườn cốt lết rim #2"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Sườn Cốt Lết Rim #2 - ảnh minh họa rice cho nhóm Cơm tấm sườn dày chất lượng cao"
+        },
+        {
+          "id": "item_food_008",
+          "name": "Cơm Tấm Sườn Bì Chả #8",
+          "price_old": 106000,
+          "price_new": 85000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm tấm sườn bì chả #8"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Sườn Bì Chả #8 - ảnh minh họa rice cho nhóm Cơm tấm sườn dày chất lượng cao"
+        },
+        {
+          "id": "item_food_029",
+          "name": "Cơm Tấm Đùi Gà Rim Mật Ong #2",
+          "price_old": 93000,
+          "price_new": 75000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm tấm đùi gà rim mật ong #2"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Đùi Gà Rim Mật Ong #2 - ảnh minh họa rice cho nhóm Cơm tấm sườn dày chất lượng cao"
+        }
+      ]
+    },
+    {
+      "id": "res_office_coffee",
+      "name": "Highlands Coffee - Centec Tower Plaza",
+      "cuisine": "Cà phê truyền thống, Bánh ngọt",
+      "rating": 4.7,
+      "distance_km": 0.2,
+      "eta_minutes": 8,
+      "address": "Tầng trệt tòa nhà Centec Tower, Q.3",
+      "menu": [
+        {
+          "id": "item_coffee_phin",
+          "name": "Highlands Phin Sữa Đá Size L + Croissant phô mai",
+          "price_old": 69000,
+          "price_new": 49000,
+          "discount_label": "Giảm 29%",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cà phê Robusta phin",
+            "sữa đặc",
+            "bánh sừng bò",
+            "phô mai (sữa, bơ)"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Highlands Phin Sữa Đá Size L + Croissant phô mai - ảnh minh họa coffee cho nhóm Cà phê truyền thống, Bánh ngọt"
+        },
+        {
+          "id": "item_food_016",
+          "name": "Phin Sữa Đá Đậm Đà #5",
+          "price_old": 31000,
+          "price_new": 25000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phin sữa đá đậm đà #5",
+            "phô mai (sữa, bơ)",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phin Sữa Đá Đậm Đà #5 - ảnh minh họa coffee cho nhóm Cà phê truyền thống, Bánh ngọt"
+        },
+        {
+          "id": "item_food_025",
+          "name": "Bạc Xỉu Cốt Dừa #3",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "bạc xỉu cốt dừa #3",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bạc Xỉu Cốt Dừa #3 - ảnh minh họa coffee cho nhóm Cà phê truyền thống, Bánh ngọt"
+        }
+      ]
+    },
+    {
+      "id": "res_office_frog",
+      "name": "Cháo Ếch Singapore Nóng Hổi - Nguyễn Thị Minh Khai",
+      "cuisine": "Cháo ếch, Đồ ăn tối/đêm",
+      "rating": 4.8,
+      "distance_km": 0.7,
+      "eta_minutes": 11,
+      "address": "180 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_frog_porridge",
+          "name": "Set cháo ếch Singapore niêu đất xốt hành gừng",
+          "price_old": 110000,
+          "price_new": 85000,
+          "discount_label": "Tăng ca khao 25k",
+          "spicy_level": 1,
+          "is_healthy": true,
+          "ingredients": [
+            "thịt ếch tươi",
+            "cháo trắng lá dứa",
+            "nước tương",
+            "hành lá",
+            "gừng tươi",
+            "xốt Singapore"
+          ],
+          "suitable_times": [
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Set cháo ếch Singapore niêu đất xốt hành gừng - ảnh minh họa soup cho nhóm Cháo ếch, Đồ ăn tối/đêm"
+        }
+      ]
+    },
+    {
+      "id": "res_office_detox",
+      "name": "JuiceLand Detox & Salad Bar - Q.3",
+      "cuisine": "Nước ép detox, Salad chay",
+      "rating": 4.7,
+      "distance_km": 0.4,
+      "eta_minutes": 8,
+      "address": "60 Võ Văn Tần, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_detox_green",
+          "name": "Nước ép detox Kale & Green Apple thanh lọc",
+          "price_old": 80000,
+          "price_new": 65000,
+          "discount_label": "Giảm 15k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "cải xoăn kale",
+            "táo xanh",
+            "cần tây",
+            "dưa chuột",
+            "nước cốt chanh tươi"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nước ép detox Kale & Green Apple thanh lọc - ảnh minh họa juice cho nhóm Nước ép detox, Salad chay"
+        },
+        {
+          "id": "item_salad_quinoa",
+          "name": "Salad Quinoa bơ sáp hạt chia thuần chay",
+          "price_old": 110000,
+          "price_new": 85000,
+          "discount_label": "Giảm 25k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "quinoa chín",
+            "bơ sáp đà lạt",
+            "cà chua bi",
+            "hạt chia",
+            "rau xà lách hữu cơ",
+            "sốt chanh leo"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Quinoa bơ sáp hạt chia thuần chay - ảnh minh họa juice cho nhóm Nước ép detox, Salad chay"
+        }
+      ]
+    },
+    {
+      "id": "res_added_katinat_qu_n_3",
+      "name": "Katinat - Quận 3",
+      "cuisine": "Cà phê, Salad healthy, Đặc sản",
+      "rating": 4.5,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_001",
+          "name": "Cà Phê Sữa Đá Sài Gòn #7",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "sữa đặc",
+            "cà phê sữa đá sài gòn #7"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cà Phê Sữa Đá Sài Gòn #7 - ảnh minh họa coffee cho nhóm Cà phê, Salad healthy, Đặc sản"
+        },
+        {
+          "id": "item_food_019",
+          "name": "Bạc Xỉu Cốt Dừa #4",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "sữa đặc",
+            "bạc xỉu cốt dừa #4"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bạc Xỉu Cốt Dừa #4 - ảnh minh họa coffee cho nhóm Cà phê, Salad healthy, Đặc sản"
+        },
+        {
+          "id": "item_food_023",
+          "name": "Cà Phê Sữa Đá Sài Gòn #2",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "cà phê sữa đá sài gòn #2",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cà Phê Sữa Đá Sài Gòn #2 - ảnh minh họa coffee cho nhóm Cà phê, Salad healthy, Đặc sản"
+        },
+        {
+          "id": "item_food_027",
+          "name": "Phin Sữa Đá Đậm Đà #4",
+          "price_old": 22000,
+          "price_new": 18000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "sữa đặc",
+            "phin sữa đá đậm đà #4"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phin Sữa Đá Đậm Đà #4 - ảnh minh họa coffee cho nhóm Cà phê, Salad healthy, Đặc sản"
+        }
+      ]
+    },
+    {
+      "id": "res_added_bami_sot_qu_n_3",
+      "name": "Bami Sot - Quận 3",
+      "cuisine": "Trà sữa, Ăn vặt học đường",
+      "rating": 4.6,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_005",
+          "name": "Bánh Mì Ốp La Xúc Xích #3",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "bánh mì ốp la xúc xích #3",
+            "gluten"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh Mì Ốp La Xúc Xích #3 - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_009",
+          "name": "Bánh Mì Pate Chả Lụa #3",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh mì pate chả lụa #3",
+            "bột mì",
+            "gluten"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh Mì Pate Chả Lụa #3 - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_018",
+          "name": "Bánh Mì Pate Chả Lụa #4",
+          "price_old": 22000,
+          "price_new": 18000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "bánh mì pate chả lụa #4"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh Mì Pate Chả Lụa #4 - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_022",
+          "name": "Bánh Mì Thịt Nướng Xá Xíu #1",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh mì thịt nướng xá xíu #1",
+            "bột mì",
+            "gluten"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh Mì Thịt Nướng Xá Xíu #1 - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_045",
+          "name": "Bánh Mì Pate Chả Lụa #7",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "bánh mì pate chả lụa #7"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh Mì Pate Chả Lụa #7 - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_test_wheat_bread",
+          "name": "Bánh mì Pate thịt nguội đặc biệt (vỏ bánh mì từ bột mì)",
+          "price_old": 25000,
+          "price_new": 20000,
+          "discount_label": "Giảm 5k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "vỏ bánh mì giòn (bột mì)",
+            "gluten",
+            "pate gan heo",
+            "thịt nguội",
+            "bơ trứng",
+            "dưa leo đồ chua"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh mì Pate thịt nguội đặc biệt (vỏ bánh mì từ bột mì) - ảnh minh họa banhMi cho nhóm Trà sữa, Ăn vặt học đường"
+        }
+      ]
+    },
+    {
+      "id": "res_added_tocotoco_qu_n_3",
+      "name": "TocoToco - Quận 3",
+      "cuisine": "Trà sữa, Ăn vặt học đường",
+      "rating": 4.9,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_007",
+          "name": "Hồng Trà Sữa Thạch Gấu #3",
+          "price_old": 40000,
+          "price_new": 32000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "hồng trà sữa thạch gấu #3",
+            "phô mai (sữa, bơ)",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Hồng Trà Sữa Thạch Gấu #3 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_030",
+          "name": "Hồng Trà Sữa Thạch Gấu #8",
+          "price_old": 43000,
+          "price_new": 35000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "hồng trà sữa thạch gấu #8",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Hồng Trà Sữa Thạch Gấu #8 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_033",
+          "name": "Trà Sữa Matcha Đậu Đỏ #3",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "trà sữa matcha đậu đỏ #3",
+            "phô mai (sữa, bơ)",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà Sữa Matcha Đậu Đỏ #3 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_041",
+          "name": "Trà Sữa Matcha Đậu Đỏ #6",
+          "price_old": 40000,
+          "price_new": 32000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "sữa đặc",
+            "trà sữa matcha đậu đỏ #6"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà Sữa Matcha Đậu Đỏ #6 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        }
+      ]
+    },
+    {
+      "id": "res_added_m_tr_n_t_n_l_a_qu_n_3",
+      "name": "Mì Trộn Tên Lửa - Quận 3",
+      "cuisine": "Mì trộn, Cơm bình dân",
+      "rating": 4.4,
+      "distance_km": 1.2,
+      "eta_minutes": 15,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_011",
+          "name": "Mì Trộn Xúc Xích Phô Mai #3",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "mì trộn xúc xích phô mai #3",
+            "bột mì",
+            "gluten"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Xúc Xích Phô Mai #3 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_024",
+          "name": "Mì Trộn Gà Giòn Sốt Cay #4",
+          "price_old": 43000,
+          "price_new": 35000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn gà giòn sốt cay #4"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Gà Giòn Sốt Cay #4 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_035",
+          "name": "Mì Trộn Xúc Xích Phô Mai #9",
+          "price_old": 40000,
+          "price_new": 32000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn xúc xích phô mai #9"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Xúc Xích Phô Mai #9 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_038",
+          "name": "Mì Trộn Xúc Xích Phô Mai #4",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn xúc xích phô mai #4"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Xúc Xích Phô Mai #4 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        }
+      ]
+    },
+    {
+      "id": "res_added_c_m_t_m_ba_ghi_n_qu_n_3",
+      "name": "Cơm Tấm Ba Ghiền - Quận 3",
+      "cuisine": "Mì trộn, Cơm bình dân",
+      "rating": 4.9,
+      "distance_km": 1.2,
+      "eta_minutes": 15,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_012",
+          "name": "Cơm Tấm Sườn Bì Chả #4",
+          "price_old": 68000,
+          "price_new": 55000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm tấm sườn bì chả #4"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Sườn Bì Chả #4 - ảnh minh họa rice cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_028",
+          "name": "Cơm Tấm Đùi Gà Rim Mật Ong #5",
+          "price_old": 81000,
+          "price_new": 65000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm tấm đùi gà rim mật ong #5"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm Tấm Đùi Gà Rim Mật Ong #5 - ảnh minh họa rice cho nhóm Mì trộn, Cơm bình dân"
+        }
+      ]
+    },
+    {
+      "id": "res_added_n_v_t_c_t_qu_n_3",
+      "name": "Ăn Vặt Cô Út - Quận 3",
+      "cuisine": "Trà sữa, Ăn vặt học đường",
+      "rating": 4.4,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_013",
+          "name": "Khoai Tây Lắc Phô Mai #5",
+          "price_old": 31000,
+          "price_new": 25000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "khoai tây lắc phô mai #5",
+            "gluten"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Khoai Tây Lắc Phô Mai #5 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_017",
+          "name": "Nem Chua Rán Hà Nội #6",
+          "price_old": 31000,
+          "price_new": 25000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "nem chua rán hà nội #6",
+            "bột mì",
+            "gluten"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nem Chua Rán Hà Nội #6 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_040",
+          "name": "Nem Chua Rán Hà Nội #7",
+          "price_old": 18000,
+          "price_new": 15000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "nem chua rán hà nội #7",
+            "gluten"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nem Chua Rán Hà Nội #7 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_042",
+          "name": "Cá Viên Chiên Nước Mắm #3",
+          "price_old": 27000,
+          "price_new": 22000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "cá viên chiên nước mắm #3"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cá Viên Chiên Nước Mắm #3 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        }
+      ]
+    },
+    {
+      "id": "res_added_m_tr_n_h_ng_xanh_qu_n_3",
+      "name": "Mì Trộn Hàng Xanh - Quận 3",
+      "cuisine": "Mì trộn, Cơm bình dân",
+      "rating": 4.4,
+      "distance_km": 1.2,
+      "eta_minutes": 15,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_014",
+          "name": "Mì Trộn Indomie Xá Xíu #5",
+          "price_old": 48000,
+          "price_new": 39000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn indomie xá xíu #5"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Indomie Xá Xíu #5 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_036",
+          "name": "Mì Trộn Xúc Xích Phô Mai #1",
+          "price_old": 48000,
+          "price_new": 39000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn xúc xích phô mai #1"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Xúc Xích Phô Mai #1 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        },
+        {
+          "id": "item_food_043",
+          "name": "Mì Trộn Gà Giòn Sốt Cay #5",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "gluten",
+            "mì trộn gà giòn sốt cay #5"
+          ],
+          "suitable_times": [
+            "lunch",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì Trộn Gà Giòn Sốt Cay #5 - ảnh minh họa noodle cho nhóm Mì trộn, Cơm bình dân"
+        }
+      ]
+    },
+    {
+      "id": "res_added_ding_tea_qu_n_3",
+      "name": "Ding Tea - Quận 3",
+      "cuisine": "Trà sữa, Ăn vặt học đường",
+      "rating": 4.6,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_015",
+          "name": "Trà Sữa Matcha Đậu Đỏ #1",
+          "price_old": 48000,
+          "price_new": 39000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "trà sữa matcha đậu đỏ #1",
+            "phô mai (sữa, bơ)",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà Sữa Matcha Đậu Đỏ #1 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        },
+        {
+          "id": "item_food_039",
+          "name": "Trà Sữa Trân Châu Hoàng Kim #6",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Giảm 20%",
+          "spicy_level": 2,
+          "is_healthy": false,
+          "ingredients": [
+            "phô mai (sữa, bơ)",
+            "sữa đặc",
+            "trà sữa trân châu hoàng kim #6"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà Sữa Trân Châu Hoàng Kim #6 - ảnh minh họa milkTea cho nhóm Trà sữa, Ăn vặt học đường"
+        }
+      ]
+    },
+    {
+      "id": "res_added_healthy_salad_co_qu_n_3",
+      "name": "Healthy Salad Co - Quận 3",
+      "cuisine": "Cà phê, Salad healthy, Đặc sản",
+      "rating": 4.4,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_031",
+          "name": "Salad Ức Gà Áp Chảo #8",
+          "price_old": 93000,
+          "price_new": 75000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu phộng rắc",
+            "salad ức gà áp chảo #8"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad Ức Gà Áp Chảo #8 - ảnh minh họa chicken cho nhóm Cà phê, Salad healthy, Đặc sản"
+        }
+      ]
+    },
+    {
+      "id": "res_added_b_n_th_t_n_ng_anh_ba_qu_n_3",
+      "name": "Bún Thịt Nướng Anh Ba - Quận 3",
+      "cuisine": "Cà phê, Salad healthy, Đặc sản",
+      "rating": 4.5,
+      "distance_km": 0.8,
+      "eta_minutes": 12,
+      "address": "Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_food_044",
+          "name": "Bún Đậu Mắm Tôm Mẹt #6",
+          "price_old": 52000,
+          "price_new": 42000,
+          "discount_label": "Khao ship",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "đậu phộng rắc",
+            "bún đậu mắm tôm mẹt #6"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún Đậu Mắm Tôm Mẹt #6 - ảnh minh họa seafood cho nhóm Cà phê, Salad healthy, Đặc sản"
+        }
+      ]
+    },
+    {
+      "id": "res_drink_juice_quan3",
+      "name": "Nước Ép Mát Lành 24H - Quận 3",
+      "cuisine": "Nước ép, Sinh tố, Detox",
+      "rating": 4.7,
+      "distance_km": 0.6,
+      "eta_minutes": 10,
+      "address": "45 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_juice_orange_carrot",
+          "name": "Nước ép cam cà rốt ít đường",
+          "price_old": 35000,
+          "price_new": 29000,
+          "discount_label": "Ít đường 29k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "cam tươi",
+            "cà rốt",
+            "mật ong",
+            "đá viên"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nước ép cam cà rốt ít đường - ảnh minh họa juice cho nhóm Nước ép, Sinh tố, Detox"
+        },
+        {
+          "id": "item_juice_guava_plum",
+          "name": "Nước ép ổi xí muội mát lạnh",
+          "price_old": 30000,
+          "price_new": 25000,
+          "discount_label": "Giải khát 25k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "ổi hồng",
+            "xí muội",
+            "đường mía",
+            "đá viên"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Nước ép ổi xí muội mát lạnh - ảnh minh họa juice cho nhóm Nước ép, Sinh tố, Detox"
+        },
+        {
+          "id": "item_smoothie_avocado",
+          "name": "Sinh tố bơ sữa đặc béo mịn",
+          "price_old": 42000,
+          "price_new": 35000,
+          "discount_label": "Best seller",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bơ sáp",
+            "sữa đặc",
+            "sữa tươi",
+            "đá xay"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sinh tố bơ sữa đặc béo mịn - ảnh minh họa juice cho nhóm Nước ép, Sinh tố, Detox"
+        },
+        {
+          "id": "item_detox_pineapple_cucumber",
+          "name": "Detox dứa dưa leo bạc hà",
+          "price_old": 39000,
+          "price_new": 32000,
+          "discount_label": "Healthy 32k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "dứa",
+            "dưa leo",
+            "bạc hà",
+            "chanh vàng"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Detox dứa dưa leo bạc hà - ảnh minh họa juice cho nhóm Nước ép, Sinh tố, Detox"
+        },
+        {
+          "id": "item_smoothie_mango_yogurt",
+          "name": "Sinh tố xoài sữa chua",
+          "price_old": 39000,
+          "price_new": 33000,
+          "discount_label": "Chua ngọt mát",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "xoài cát",
+            "sữa chua",
+            "sữa tươi",
+            "hạt chia"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sinh tố xoài sữa chua - ảnh minh họa dessert cho nhóm Nước ép, Sinh tố, Detox"
+        }
+      ]
+    },
+    {
+      "id": "res_milktea_student_corner",
+      "name": "Trà Sữa Góc Lớp - Cổng Trường",
+      "cuisine": "Trà sữa, Trà trái cây, Topping",
+      "rating": 4.6,
+      "distance_km": 0.4,
+      "eta_minutes": 9,
+      "address": "12 Võ Văn Tần, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_milktea_brown_sugar_25k",
+          "name": "Trà sữa đường đen trân châu size M",
+          "price_old": 32000,
+          "price_new": 25000,
+          "discount_label": "Đồng giá học sinh",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà đen",
+            "sữa tươi",
+            "trân châu đen",
+            "đường nâu"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà sữa đường đen trân châu size M - ảnh minh họa milkTea cho nhóm Trà sữa, Trà trái cây, Topping"
+        },
+        {
+          "id": "item_peach_tea_orange_lemongrass",
+          "name": "Trà đào cam sả ít ngọt",
+          "price_old": 35000,
+          "price_new": 28000,
+          "discount_label": "Ít ngọt dễ uống",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "trà đào",
+            "cam vàng",
+            "sả cây",
+            "đào miếng"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà đào cam sả ít ngọt - ảnh minh họa milkTea cho nhóm Trà sữa, Trà trái cây, Topping"
+        },
+        {
+          "id": "item_matcha_latte_redbean",
+          "name": "Matcha latte đậu đỏ",
+          "price_old": 45000,
+          "price_new": 39000,
+          "discount_label": "Matcha đậm vị",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "matcha",
+            "sữa tươi",
+            "đậu đỏ",
+            "kem sữa"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Matcha latte đậu đỏ - ảnh minh họa milkTea cho nhóm Trà sữa, Trà trái cây, Topping"
+        },
+        {
+          "id": "item_oolong_milkfoam",
+          "name": "Trà ô long kem cheese",
+          "price_old": 42000,
+          "price_new": 36000,
+          "discount_label": "Kem cheese béo",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà ô long",
+            "kem cheese",
+            "sữa",
+            "muối biển"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà ô long kem cheese - ảnh minh họa milkTea cho nhóm Trà sữa, Trà trái cây, Topping"
+        },
+        {
+          "id": "item_lychee_tea_chia",
+          "name": "Trà vải hạt chia thanh mát",
+          "price_old": 36000,
+          "price_new": 29000,
+          "discount_label": "Mát họng 29k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "trà lài",
+            "vải",
+            "hạt chia",
+            "đường phèn"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà vải hạt chia thanh mát - ảnh minh họa milkTea cho nhóm Trà sữa, Trà trái cây, Topping"
+        }
+      ]
+    },
+    {
+      "id": "res_snack_after_school",
+      "name": "Ăn Vặt Tan Học - Nguyễn Thượng Hiền",
+      "cuisine": "Ăn vặt, Bánh tráng, Xiên que",
+      "rating": 4.5,
+      "distance_km": 0.7,
+      "eta_minutes": 12,
+      "address": "88 Nguyễn Thượng Hiền, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_banhtrang_cuon_bo_khongcay",
+          "name": "Bánh tráng cuộn bơ không cay",
+          "price_old": 28000,
+          "price_new": 22000,
+          "discount_label": "Tan học 22k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh tráng",
+            "bơ trứng",
+            "xoài xanh",
+            "rau răm"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh tráng cuộn bơ không cay - ảnh minh họa snack cho nhóm Ăn vặt, Bánh tráng, Xiên que"
+        },
+        {
+          "id": "item_fried_fishball_combo",
+          "name": "Combo cá viên chiên nước mắm",
+          "price_old": 35000,
+          "price_new": 29000,
+          "discount_label": "Combo no nhẹ",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "cá viên",
+            "nước mắm tỏi",
+            "dưa leo",
+            "tương ớt"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Combo cá viên chiên nước mắm - ảnh minh họa snack cho nhóm Ăn vặt, Bánh tráng, Xiên que"
+        },
+        {
+          "id": "item_cheese_potato_cup",
+          "name": "Khoai tây lắc phô mai ly nhỏ",
+          "price_old": 25000,
+          "price_new": 19000,
+          "discount_label": "Hạt dẻ 19k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "khoai tây",
+            "bột phô mai",
+            "dầu thực vật"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Khoai tây lắc phô mai ly nhỏ - ảnh minh họa snack cho nhóm Ăn vặt, Bánh tráng, Xiên que"
+        },
+        {
+          "id": "item_seaweed_rice_roll",
+          "name": "Cơm cuộn rong biển mini",
+          "price_old": 32000,
+          "price_new": 26000,
+          "discount_label": "Không cay",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm Nhật",
+            "rong biển",
+            "trứng",
+            "xúc xích",
+            "dưa leo"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm cuộn rong biển mini - ảnh minh họa rice cho nhóm Ăn vặt, Bánh tráng, Xiên que"
+        },
+        {
+          "id": "item_tokbokki_mild",
+          "name": "Tokbokki sốt phô mai ít cay",
+          "price_old": 45000,
+          "price_new": 35000,
+          "discount_label": "Ít cay",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh gạo",
+            "phô mai",
+            "chả cá",
+            "sốt gochujang nhẹ"
+          ],
+          "suitable_times": [
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Tokbokki sốt phô mai ít cay - ảnh minh họa snack cho nhóm Ăn vặt, Bánh tráng, Xiên que"
+        }
+      ]
+    },
+    {
+      "id": "res_rice_student_value",
+      "name": "Cơm Sinh Viên No Lâu - KTX",
+      "cuisine": "Cơm bình dân, Cơm gà, Cơm sườn",
+      "rating": 4.7,
+      "distance_km": 1,
+      "eta_minutes": 15,
+      "address": "Đường số 8, KTX Khu B, Dĩ An",
+      "menu": [
+        {
+          "id": "item_rice_grilled_pork_egg",
+          "name": "Cơm sườn nướng trứng ốp la",
+          "price_old": 45000,
+          "price_new": 39000,
+          "discount_label": "No lâu 39k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo tấm",
+            "sườn heo",
+            "trứng gà",
+            "dưa leo",
+            "nước mắm"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm sườn nướng trứng ốp la - ảnh minh họa rice cho nhóm Cơm bình dân, Cơm gà, Cơm sườn"
+        },
+        {
+          "id": "item_rice_chicken_teriyaki",
+          "name": "Cơm gà teriyaki rong biển",
+          "price_old": 52000,
+          "price_new": 45000,
+          "discount_label": "Sinh viên 45k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm trắng",
+            "đùi gà",
+            "sốt teriyaki",
+            "rong biển"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm gà teriyaki rong biển - ảnh minh họa rice cho nhóm Cơm bình dân, Cơm gà, Cơm sườn"
+        },
+        {
+          "id": "item_rice_tofu_mushroom",
+          "name": "Cơm đậu hũ nấm sốt tiêu",
+          "price_old": 39000,
+          "price_new": 32000,
+          "discount_label": "Chay nhẹ bụng",
+          "spicy_level": 1,
+          "is_healthy": true,
+          "ingredients": [
+            "cơm trắng",
+            "đậu hũ",
+            "nấm đông cô",
+            "tiêu xanh"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm đậu hũ nấm sốt tiêu - ảnh minh họa rice cho nhóm Cơm bình dân, Cơm gà, Cơm sườn"
+        },
+        {
+          "id": "item_rice_braised_fish",
+          "name": "Cơm cá basa kho tộ",
+          "price_old": 48000,
+          "price_new": 42000,
+          "discount_label": "Cơm nhà",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm trắng",
+            "cá basa",
+            "nước màu",
+            "hành lá"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm cá basa kho tộ - ảnh minh họa rice cho nhóm Cơm bình dân, Cơm gà, Cơm sườn"
+        },
+        {
+          "id": "item_rice_omelet_minced_pork",
+          "name": "Cơm trứng cuộn thịt bằm",
+          "price_old": 38000,
+          "price_new": 30000,
+          "discount_label": "Vừa ví 30k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm trắng",
+            "trứng gà",
+            "thịt heo bằm",
+            "cà chua"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm trứng cuộn thịt bằm - ảnh minh họa rice cho nhóm Cơm bình dân, Cơm gà, Cơm sườn"
+        }
+      ]
+    },
+    {
+      "id": "res_noodle_late_night",
+      "name": "Mì Trộn Đêm Khuya - KTX",
+      "cuisine": "Mì trộn, Ăn đêm, No lâu",
+      "rating": 4.6,
+      "distance_km": 1.2,
+      "eta_minutes": 18,
+      "address": "Cổng sau KTX Khu B, Dĩ An",
+      "menu": [
+        {
+          "id": "item_noodle_bbq_pork",
+          "name": "Mì trộn xá xíu trứng lòng đào",
+          "price_old": 49000,
+          "price_new": 42000,
+          "discount_label": "Ăn đêm no lâu",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "mì trứng",
+            "xá xíu",
+            "trứng lòng đào",
+            "sốt dầu hào"
+          ],
+          "suitable_times": [
+            "evening",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì trộn xá xíu trứng lòng đào - ảnh minh họa noodle cho nhóm Mì trộn, Ăn đêm, No lâu"
+        },
+        {
+          "id": "item_noodle_chicken_mushroom",
+          "name": "Mì gà nấm sốt mè rang",
+          "price_old": 52000,
+          "price_new": 45000,
+          "discount_label": "Không cay",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "mì",
+            "ức gà",
+            "nấm",
+            "sốt mè rang"
+          ],
+          "suitable_times": [
+            "lunch",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì gà nấm sốt mè rang - ảnh minh họa noodle cho nhóm Mì trộn, Ăn đêm, No lâu"
+        },
+        {
+          "id": "item_noodle_spicy_beef",
+          "name": "Mì bò cay Tứ Xuyên",
+          "price_old": 59000,
+          "price_new": 49000,
+          "discount_label": "Cay đã miệng",
+          "spicy_level": 3,
+          "is_healthy": false,
+          "ingredients": [
+            "mì",
+            "bò lát",
+            "ớt Tứ Xuyên",
+            "dầu sa tế"
+          ],
+          "suitable_times": [
+            "evening",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì bò cay Tứ Xuyên - ảnh minh họa noodle cho nhóm Mì trộn, Ăn đêm, No lâu"
+        },
+        {
+          "id": "item_udon_cream_bacon",
+          "name": "Udon kem nấm thịt xông khói",
+          "price_old": 65000,
+          "price_new": 55000,
+          "discount_label": "Béo thơm",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "udon",
+            "kem sữa",
+            "nấm",
+            "bacon"
+          ],
+          "suitable_times": [
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Udon kem nấm thịt xông khói - ảnh minh họa noodle cho nhóm Mì trộn, Ăn đêm, No lâu"
+        },
+        {
+          "id": "item_noodle_veggie_light",
+          "name": "Mì rau củ sốt nấm thanh nhẹ",
+          "price_old": 45000,
+          "price_new": 36000,
+          "discount_label": "Nhẹ bụng",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "mì",
+            "cải thìa",
+            "nấm",
+            "sốt nấm chay"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Mì rau củ sốt nấm thanh nhẹ - ảnh minh họa noodle cho nhóm Mì trộn, Ăn đêm, No lâu"
+        }
+      ]
+    },
+    {
+      "id": "res_office_lunch_box",
+      "name": "Hộp Cơm Văn Phòng 12H - Quận 1",
+      "cuisine": "Cơm văn phòng, Set lunch, Bento",
+      "rating": 4.8,
+      "distance_km": 1.4,
+      "eta_minutes": 20,
+      "address": "25 Pasteur, Quận 1, TP.HCM",
+      "menu": [
+        {
+          "id": "item_office_bento_salmon",
+          "name": "Bento cá hồi áp chảo sốt chanh dây",
+          "price_old": 119000,
+          "price_new": 99000,
+          "discount_label": "Set lunch premium",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "cá hồi",
+            "gạo Nhật",
+            "bông cải",
+            "chanh dây"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bento cá hồi áp chảo sốt chanh dây - ảnh minh họa rice cho nhóm Cơm văn phòng, Set lunch, Bento"
+        },
+        {
+          "id": "item_office_rice_chicken_basil",
+          "name": "Cơm gà áp chảo sốt húng quế",
+          "price_old": 85000,
+          "price_new": 69000,
+          "discount_label": "Lunch 69k",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "ức gà",
+            "cơm gạo lứt",
+            "húng quế",
+            "rau củ"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm gà áp chảo sốt húng quế - ảnh minh họa rice cho nhóm Cơm văn phòng, Set lunch, Bento"
+        },
+        {
+          "id": "item_office_pork_rib_honey",
+          "name": "Cơm sườn non rim mật ong",
+          "price_old": 95000,
+          "price_new": 79000,
+          "discount_label": "Đậm đà văn phòng",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "sườn non",
+            "mật ong",
+            "cơm trắng",
+            "salad"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm sườn non rim mật ong - ảnh minh họa rice cho nhóm Cơm văn phòng, Set lunch, Bento"
+        },
+        {
+          "id": "item_office_beef_blackpepper",
+          "name": "Cơm bò sốt tiêu đen",
+          "price_old": 99000,
+          "price_new": 85000,
+          "discount_label": "No bụng",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "bò Úc",
+            "tiêu đen",
+            "cơm trắng",
+            "ớt chuông"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm bò sốt tiêu đen - ảnh minh họa rice cho nhóm Cơm văn phòng, Set lunch, Bento"
+        },
+        {
+          "id": "item_office_group_combo_3",
+          "name": "Combo cơm trưa nhóm 3 người",
+          "price_old": 255000,
+          "price_new": 219000,
+          "discount_label": "Đặt nhóm tiết kiệm",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cơm",
+            "gà áp chảo",
+            "sườn rim",
+            "canh rong biển"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Combo cơm trưa nhóm 3 người - ảnh minh họa rice cho nhóm Cơm văn phòng, Set lunch, Bento"
+        }
+      ]
+    },
+    {
+      "id": "res_healthy_bowl_green",
+      "name": "Green Bowl Eat Clean - Nguyễn Thị Minh Khai",
+      "cuisine": "Healthy, Salad, Cơm gạo lứt",
+      "rating": 4.9,
+      "distance_km": 0.9,
+      "eta_minutes": 14,
+      "address": "99 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_healthy_chicken_quinoa",
+          "name": "Salad quinoa ức gà sốt mè rang",
+          "price_old": 89000,
+          "price_new": 75000,
+          "discount_label": "Healthy lunch",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "quinoa",
+            "ức gà",
+            "xà lách",
+            "sốt mè rang"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad quinoa ức gà sốt mè rang - ảnh minh họa healthy cho nhóm Healthy, Salad, Cơm gạo lứt"
+        },
+        {
+          "id": "item_healthy_tuna_avocado",
+          "name": "Poke cá ngừ bơ hạt chia",
+          "price_old": 109000,
+          "price_new": 89000,
+          "discount_label": "Giàu protein",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "cá ngừ",
+            "bơ",
+            "gạo lứt",
+            "hạt chia"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Poke cá ngừ bơ hạt chia - ảnh minh họa healthy cho nhóm Healthy, Salad, Cơm gạo lứt"
+        },
+        {
+          "id": "item_healthy_beef_brown_rice",
+          "name": "Cơm gạo lứt bò áp chảo",
+          "price_old": 99000,
+          "price_new": 82000,
+          "discount_label": "Ít dầu mỡ",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "gạo lứt",
+            "bò áp chảo",
+            "bông cải",
+            "cà rốt"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm gạo lứt bò áp chảo - ảnh minh họa rice cho nhóm Healthy, Salad, Cơm gạo lứt"
+        },
+        {
+          "id": "item_healthy_vegan_chickpea",
+          "name": "Bowl đậu gà rau củ nướng",
+          "price_old": 85000,
+          "price_new": 69000,
+          "discount_label": "Chay healthy",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu gà",
+            "bí đỏ",
+            "cải kale",
+            "sốt yogurt"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bowl đậu gà rau củ nướng - ảnh minh họa healthy cho nhóm Healthy, Salad, Cơm gạo lứt"
+        },
+        {
+          "id": "item_healthy_yogurt_granola",
+          "name": "Sữa chua Hy Lạp granola trái cây",
+          "price_old": 75000,
+          "price_new": 59000,
+          "discount_label": "Ăn nhẹ healthy",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "sữa chua Hy Lạp",
+            "granola",
+            "dâu",
+            "chuối"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sữa chua Hy Lạp granola trái cây - ảnh minh họa dessert cho nhóm Healthy, Salad, Cơm gạo lứt"
+        }
+      ]
+    },
+    {
+      "id": "res_coffee_office_focus",
+      "name": "Cà Phê Tỉnh Táo Office - Quận 1",
+      "cuisine": "Cà phê, Trà, Bánh ngọt",
+      "rating": 4.7,
+      "distance_km": 0.8,
+      "eta_minutes": 11,
+      "address": "18 Lý Tự Trọng, Quận 1, TP.HCM",
+      "menu": [
+        {
+          "id": "item_coffee_phin_sua_da",
+          "name": "Phin sữa đá đậm vị",
+          "price_old": 45000,
+          "price_new": 39000,
+          "discount_label": "Sáng tỉnh táo",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "cà phê robusta",
+            "sữa đặc",
+            "đá viên"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phin sữa đá đậm vị - ảnh minh họa coffee cho nhóm Cà phê, Trà, Bánh ngọt"
+        },
+        {
+          "id": "item_coffee_cold_brew_orange",
+          "name": "Cold brew cam vàng",
+          "price_old": 65000,
+          "price_new": 55000,
+          "discount_label": "Ít ngọt",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "cold brew",
+            "cam vàng",
+            "mật ong"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cold brew cam vàng - ảnh minh họa juice cho nhóm Cà phê, Trà, Bánh ngọt"
+        },
+        {
+          "id": "item_coffee_bac_xiu_oat",
+          "name": "Bạc xỉu sữa yến mạch",
+          "price_old": 59000,
+          "price_new": 49000,
+          "discount_label": "Không quá ngọt",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "espresso",
+            "sữa yến mạch",
+            "sữa đặc"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bạc xỉu sữa yến mạch - ảnh minh họa coffee cho nhóm Cà phê, Trà, Bánh ngọt"
+        },
+        {
+          "id": "item_tea_earl_grey_macchiato",
+          "name": "Trà earl grey macchiato",
+          "price_old": 62000,
+          "price_new": 52000,
+          "discount_label": "Thơm nhẹ",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trà earl grey",
+            "kem sữa",
+            "sữa tươi"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trà earl grey macchiato - ảnh minh họa coffee cho nhóm Cà phê, Trà, Bánh ngọt"
+        },
+        {
+          "id": "item_bakery_banana_bread",
+          "name": "Bánh chuối yến mạch ăn kèm cà phê",
+          "price_old": 45000,
+          "price_new": 39000,
+          "discount_label": "Ăn nhẹ",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "chuối",
+            "yến mạch",
+            "trứng",
+            "sữa"
+          ],
+          "suitable_times": [
+            "morning",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1505253210343-005f754b8b96?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh chuối yến mạch ăn kèm cà phê - ảnh minh họa dessert cho nhóm Cà phê, Trà, Bánh ngọt"
+        }
+      ]
+    },
+    {
+      "id": "res_vietnamese_soup_comfort",
+      "name": "Bếp Nhà Nóng Hổi - Quận 3",
+      "cuisine": "Phở, Bún, Cháo, Món nóng",
+      "rating": 4.6,
+      "distance_km": 1.1,
+      "eta_minutes": 17,
+      "address": "60 Cách Mạng Tháng 8, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_pho_chicken_light",
+          "name": "Phở gà ta nước trong",
+          "price_old": 65000,
+          "price_new": 55000,
+          "discount_label": "Ấm bụng",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh phở",
+            "gà ta",
+            "hành lá",
+            "nước dùng gà"
+          ],
+          "suitable_times": [
+            "morning",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Phở gà ta nước trong - ảnh minh họa soup cho nhóm Phở, Bún, Cháo, Món nóng"
+        },
+        {
+          "id": "item_bun_bo_mild",
+          "name": "Bún bò Huế ít cay",
+          "price_old": 75000,
+          "price_new": 65000,
+          "discount_label": "Ít cay",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "bún",
+            "bò nạm",
+            "chả cua",
+            "sa tế nhẹ"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún bò Huế ít cay - ảnh minh họa soup cho nhóm Phở, Bún, Cháo, Món nóng"
+        },
+        {
+          "id": "item_chao_ga_nam",
+          "name": "Cháo gà nấm hương",
+          "price_old": 55000,
+          "price_new": 45000,
+          "discount_label": "Dễ ăn",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "gạo",
+            "gà xé",
+            "nấm hương",
+            "hành phi"
+          ],
+          "suitable_times": [
+            "morning",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cháo gà nấm hương - ảnh minh họa soup cho nhóm Phở, Bún, Cháo, Món nóng"
+        },
+        {
+          "id": "item_mien_ga_khongcay",
+          "name": "Miến gà măng khô không cay",
+          "price_old": 62000,
+          "price_new": 52000,
+          "discount_label": "Không cay",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "miến",
+            "gà",
+            "măng khô",
+            "rau răm"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad8cd305?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Miến gà măng khô không cay - ảnh minh họa soup cho nhóm Phở, Bún, Cháo, Món nóng"
+        },
+        {
+          "id": "item_bun_rieu_tomato",
+          "name": "Bún riêu cua cà chua",
+          "price_old": 68000,
+          "price_new": 58000,
+          "discount_label": "Chua nhẹ",
+          "spicy_level": 1,
+          "is_healthy": false,
+          "ingredients": [
+            "bún",
+            "riêu cua",
+            "cà chua",
+            "đậu hũ"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún riêu cua cà chua - ảnh minh họa seafood cho nhóm Phở, Bún, Cháo, Món nóng"
+        }
+      ]
+    },
+    {
+      "id": "res_vegan_light_meal",
+      "name": "An Nhiên Chay & Healthy - Quận 3",
+      "cuisine": "Món chay, Healthy, Cơm lứt",
+      "rating": 4.8,
+      "distance_km": 1,
+      "eta_minutes": 16,
+      "address": "42 Trương Định, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_vegan_brown_rice_mushroom",
+          "name": "Cơm lứt nấm kho tiêu",
+          "price_old": 69000,
+          "price_new": 59000,
+          "discount_label": "Chay no bụng",
+          "spicy_level": 1,
+          "is_healthy": true,
+          "ingredients": [
+            "gạo lứt",
+            "nấm đùi gà",
+            "tiêu xanh",
+            "rau luộc"
+          ],
+          "suitable_times": [
+            "lunch",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Cơm lứt nấm kho tiêu - ảnh minh họa rice cho nhóm Món chay, Healthy, Cơm lứt"
+        },
+        {
+          "id": "item_vegan_spring_rolls",
+          "name": "Gỏi cuốn chay sốt mè",
+          "price_old": 55000,
+          "price_new": 45000,
+          "discount_label": "Nhẹ bụng",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bánh tráng",
+            "đậu hũ",
+            "rau sống",
+            "sốt mè"
+          ],
+          "suitable_times": [
+            "lunch",
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Gỏi cuốn chay sốt mè - ảnh minh họa healthy cho nhóm Món chay, Healthy, Cơm lứt"
+        },
+        {
+          "id": "item_vegan_noodle_soup",
+          "name": "Bún nấm chay nước dùng rau củ",
+          "price_old": 65000,
+          "price_new": 55000,
+          "discount_label": "Ấm bụng",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bún",
+            "nấm",
+            "củ cải",
+            "cà rốt"
+          ],
+          "suitable_times": [
+            "morning",
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bún nấm chay nước dùng rau củ - ảnh minh họa soup cho nhóm Món chay, Healthy, Cơm lứt"
+        },
+        {
+          "id": "item_vegan_salad_tofu",
+          "name": "Salad đậu hũ áp chảo sốt chanh",
+          "price_old": 79000,
+          "price_new": 65000,
+          "discount_label": "Eat clean",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu hũ",
+            "xà lách",
+            "bắp Mỹ",
+            "sốt chanh"
+          ],
+          "suitable_times": [
+            "lunch"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Salad đậu hũ áp chảo sốt chanh - ảnh minh họa healthy cho nhóm Món chay, Healthy, Cơm lứt"
+        },
+        {
+          "id": "item_vegan_pumpkin_soup",
+          "name": "Súp bí đỏ hạt điều",
+          "price_old": 59000,
+          "price_new": 49000,
+          "discount_label": "Mịn ấm",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bí đỏ",
+            "hạt điều",
+            "sữa hạt",
+            "bánh mì nướng"
+          ],
+          "suitable_times": [
+            "dinner"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Súp bí đỏ hạt điều - ảnh minh họa soup cho nhóm Món chay, Healthy, Cơm lứt"
+        }
+      ]
+    },
+    {
+      "id": "res_dessert_sweet_corner",
+      "name": "Chè & Dessert Ngọt Mát - Quận 3",
+      "cuisine": "Chè, Dessert, Ăn vặt ngọt",
+      "rating": 4.5,
+      "distance_km": 0.5,
+      "eta_minutes": 10,
+      "address": "31 Bàn Cờ, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_che_thai_less_sweet",
+          "name": "Chè Thái ít ngọt",
+          "price_old": 35000,
+          "price_new": 29000,
+          "discount_label": "Mát lạnh 29k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "mít",
+            "thạch",
+            "sữa dừa",
+            "sầu riêng"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Chè Thái ít ngọt - ảnh minh họa dessert cho nhóm Chè, Dessert, Ăn vặt ngọt"
+        },
+        {
+          "id": "item_che_khuc_bach",
+          "name": "Chè khúc bạch hạnh nhân",
+          "price_old": 42000,
+          "price_new": 35000,
+          "discount_label": "Best seller",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "khúc bạch",
+            "hạnh nhân",
+            "vải",
+            "nước đường"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "evening"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Chè khúc bạch hạnh nhân - ảnh minh họa dessert cho nhóm Chè, Dessert, Ăn vặt ngọt"
+        },
+        {
+          "id": "item_caramel_flan_pearl",
+          "name": "Bánh flan trân châu đường đen",
+          "price_old": 30000,
+          "price_new": 24000,
+          "discount_label": "Học sinh 24k",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "trứng",
+            "sữa",
+            "caramel",
+            "trân châu"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1505253210343-005f754b8b96?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh flan trân châu đường đen - ảnh minh họa dessert cho nhóm Chè, Dessert, Ăn vặt ngọt"
+        },
+        {
+          "id": "item_tofu_pudding_ginger",
+          "name": "Tàu hũ nước đường gừng",
+          "price_old": 25000,
+          "price_new": 19000,
+          "discount_label": "Ấm nhẹ",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "đậu nành",
+            "đường gừng",
+            "trân châu trắng"
+          ],
+          "suitable_times": [
+            "afternoon",
+            "night"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Tàu hũ nước đường gừng - ảnh minh họa dessert cho nhóm Chè, Dessert, Ăn vặt ngọt"
+        },
+        {
+          "id": "item_fruit_box_yogurt",
+          "name": "Trái cây tô sữa chua",
+          "price_old": 39000,
+          "price_new": 32000,
+          "discount_label": "Vitamin mát",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "dưa hấu",
+            "xoài",
+            "thanh long",
+            "sữa chua"
+          ],
+          "suitable_times": [
+            "afternoon"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Trái cây tô sữa chua - ảnh minh họa dessert cho nhóm Chè, Dessert, Ăn vặt ngọt"
+        }
+      ]
+    },
+    {
+      "id": "res_breakfast_quick_bite",
+      "name": "Bữa Sáng Nhanh 7AM - Quận 3",
+      "cuisine": "Bánh mì, Xôi, Bữa sáng",
+      "rating": 4.6,
+      "distance_km": 0.6,
+      "eta_minutes": 9,
+      "address": "72 Nguyễn Thiện Thuật, Quận 3, TP.HCM",
+      "menu": [
+        {
+          "id": "item_breakfast_banhmi_chicken",
+          "name": "Bánh mì gà xé sốt bơ",
+          "price_old": 32000,
+          "price_new": 26000,
+          "discount_label": "Sáng nhanh",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bánh mì",
+            "gà xé",
+            "sốt bơ",
+            "dưa leo"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh mì gà xé sốt bơ - ảnh minh họa banhMi cho nhóm Bánh mì, Xôi, Bữa sáng"
+        },
+        {
+          "id": "item_breakfast_xoi_chicken",
+          "name": "Xôi gà xé trứng non",
+          "price_old": 39000,
+          "price_new": 32000,
+          "discount_label": "No tới trưa",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "xôi nếp",
+            "gà xé",
+            "trứng non",
+            "hành phi"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Xôi gà xé trứng non - ảnh minh họa rice cho nhóm Bánh mì, Xôi, Bữa sáng"
+        },
+        {
+          "id": "item_breakfast_oat_banana",
+          "name": "Yến mạch chuối mật ong",
+          "price_old": 45000,
+          "price_new": 36000,
+          "discount_label": "Healthy sáng",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "yến mạch",
+            "chuối",
+            "mật ong",
+            "sữa tươi"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Yến mạch chuối mật ong - ảnh minh họa healthy cho nhóm Bánh mì, Xôi, Bữa sáng"
+        },
+        {
+          "id": "item_breakfast_banhbao_pork",
+          "name": "Bánh bao thịt trứng cút",
+          "price_old": 28000,
+          "price_new": 22000,
+          "discount_label": "Hạt dẻ",
+          "spicy_level": 0,
+          "is_healthy": false,
+          "ingredients": [
+            "bột mì",
+            "thịt heo",
+            "trứng cút",
+            "nấm mèo"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Bánh bao thịt trứng cút - ảnh minh họa breakfast cho nhóm Bánh mì, Xôi, Bữa sáng"
+        },
+        {
+          "id": "item_breakfast_sandwich_tuna",
+          "name": "Sandwich cá ngừ rau củ",
+          "price_old": 49000,
+          "price_new": 39000,
+          "discount_label": "Mang đi tiện",
+          "spicy_level": 0,
+          "is_healthy": true,
+          "ingredients": [
+            "bánh mì sandwich",
+            "cá ngừ",
+            "xà lách",
+            "sốt yogurt"
+          ],
+          "suitable_times": [
+            "morning"
+          ],
+          "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+          "image_alt": "Sandwich cá ngừ rau củ - ảnh minh họa banhMi cho nhóm Bánh mì, Xôi, Bữa sáng"
+        }
+      ]
+    }
+  ]
+}

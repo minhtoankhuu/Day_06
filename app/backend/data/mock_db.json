@@ -1,0 +1,356 @@
+{
+  "users": {
+    "student_hoc_sinh": {
+      "id": "student_hoc_sinh",
+      "name": "Người dùng hiện tại",
+      "avatar": "🎒",
+      "demographic": "Học sinh (Dưới 18 tuổi)",
+      "cohort": "pupil",
+      "location": "THPT Lê Quý Đôn, Quận 3, TP.HCM",
+      "avg_order_value_limit": 30000,
+      "taste_preferences": {
+        "preferred": [
+          "Ngọt",
+          "Ăn vặt",
+          "Trà sữa",
+          "Bánh tráng"
+        ],
+        "disliked": [
+          "Món ăn quá nhiều dầu mỡ",
+          "Đắng"
+        ]
+      },
+      "allergies": []
+    },
+    "university_student": {
+      "id": "university_student",
+      "name": "Người dùng hiện tại",
+      "avatar": "🎓",
+      "demographic": "Sinh viên (18 - 22 tuổi)",
+      "cohort": "student",
+      "location": "KTX Khu B ĐHQG, Dĩ An, Bình Dương",
+      "avg_order_value_limit": 50000,
+      "taste_preferences": {
+        "preferred": [
+          "Đậm đà",
+          "Cơm sườn no lâu",
+          "Mì trộn",
+          "Trà chanh"
+        ],
+        "disliked": [
+          "Các món quá đắt đỏ",
+          "Healthy salad không vị"
+        ]
+      },
+      "allergies": []
+    },
+    "office_worker": {
+      "id": "office_worker",
+      "name": "Người dùng hiện tại",
+      "avatar": "💼",
+      "demographic": "Nhân viên văn phòng (Trên 23 tuổi)",
+      "cohort": "office",
+      "location": "Centec Tower, Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+      "avg_order_value_limit": 150000,
+      "taste_preferences": {
+        "preferred": [
+          "Healthy",
+          "Ít dầu mỡ",
+          "Cà phê sạch",
+          "Ức gà organic",
+          "Salad"
+        ],
+        "disliked": [
+          "Đồ chiên rán vỉa hè",
+          "Nước ngọt có ga"
+        ]
+      },
+      "allergies": [
+        "Đậu phộng"
+      ]
+    }
+  },
+  "food_catalog": [
+    {
+      "id": "food_001",
+      "name": "Trà Sữa Trân Châu Hoàng Kim Size M",
+      "shop": "Ding Tea - Nguyễn Đình Chiểu",
+      "price": 28000,
+      "rating": 4.6,
+      "distance": "0.4 km",
+      "eta": "10 phút",
+      "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Ngọt",
+        "Trà sữa",
+        "Không cay"
+      ],
+      "allergy_tags": [
+        "Sữa"
+      ],
+      "description": "Trà sữa Ding Tea ngọt dịu, trân châu hoàng kim dai giòn sần sật.",
+      "category": "Đồ uống",
+      "image_alt": "Trà Sữa Trân Châu Hoàng Kim Size M - ảnh minh họa milkTea cho nhóm Đồ uống"
+    },
+    {
+      "id": "food_002",
+      "name": "Bánh Tráng Cuộn Bơ Tép Khô",
+      "shop": "Ăn Vặt Cô Út - Vòng Xoay Dân Chủ",
+      "price": 22000,
+      "rating": 4.5,
+      "distance": "1.2 km",
+      "eta": "15 phút",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Ăn vặt",
+        "Mặn",
+        "Có chút cay"
+      ],
+      "allergy_tags": [
+        "Tép khô",
+        "Bơ trứng"
+      ],
+      "description": "Bánh tráng cuộn bơ béo ngậy kèm tép khô mặn mà giòn tan.",
+      "category": "Ăn vặt",
+      "image_alt": "Bánh Tráng Cuộn Bơ Tép Khô - ảnh minh họa snack cho nhóm Ăn vặt"
+    },
+    {
+      "id": "food_003",
+      "name": "Mì Trộn Xá Xíu Trứng Lòng Đào",
+      "shop": "Mì Trộn Hàng Xanh - ĐHQG TP.HCM",
+      "price": 42000,
+      "rating": 4.7,
+      "distance": "0.9 km",
+      "eta": "12 phút",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "medium",
+      "taste_tags": [
+        "Đậm đà",
+        "Mặn",
+        "Mì trộn",
+        "Không cay"
+      ],
+      "allergy_tags": [
+        "Lúa mì",
+        "Trứng"
+      ],
+      "description": "Mì trứng dai ngon trộn sốt xá xíu đậm đà kết hợp quả trứng lòng đào chảy béo ngậy.",
+      "category": "Cơm - Mì",
+      "image_alt": "Mì Trộn Xá Xíu Trứng Lòng Đào - ảnh minh họa noodle cho nhóm Cơm - Mì"
+    },
+    {
+      "id": "food_004",
+      "name": "Cơm Sườn Cốt Lết Rim Sốt Mật Ong",
+      "shop": "Cơm Tấm Cali - Nguyễn Thị Minh Khai",
+      "price": 75000,
+      "rating": 4.8,
+      "distance": "0.8 km",
+      "eta": "12 phút",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "high",
+      "taste_tags": [
+        "Cơm trưa",
+        "Đậm đà",
+        "Ngọt nhẹ"
+      ],
+      "allergy_tags": [],
+      "description": "Sườn heo cốt lết loại dày rim sốt mật ong thơm ngon đậm đà kèm đĩa cơm tấm dẻo nóng.",
+      "category": "Cơm - Mì",
+      "image_alt": "Cơm Sườn Cốt Lết Rim Sốt Mật Ong - ảnh minh họa rice cho nhóm Cơm - Mì"
+    },
+    {
+      "id": "food_005",
+      "name": "Salad Ức Gà Áp Chảo Organic",
+      "shop": "Green & Clean - Healthy Salad",
+      "price": 65000,
+      "rating": 4.8,
+      "distance": "0.8 km",
+      "eta": "12 phút",
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "high",
+      "taste_tags": [
+        "Healthy",
+        "Ít béo",
+        "Rau xanh",
+        "Không cay"
+      ],
+      "allergy_tags": [
+        "Sốt mè rang chứa đậu phộng"
+      ],
+      "description": "Rau xà lách giòn sạch trộn ức gà organic áp chảo vàng đều, rưới sốt mè rang béo nhẹ dinh dưỡng.",
+      "category": "Healthy",
+      "image_alt": "Salad Ức Gà Áp Chảo Organic - ảnh minh họa chicken cho nhóm Healthy"
+    },
+    {
+      "id": "food_006",
+      "name": "Cơm Gà Xối Mỡ Giòn",
+      "shop": "Cơm Gà Xối Mỡ Sài Gòn",
+      "price": 45000,
+      "rating": 4.6,
+      "distance": "1.1 km",
+      "eta": "15 phút",
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "medium",
+      "taste_tags": [
+        "Đậm đà",
+        "Giòn",
+        "Cơm trưa"
+      ],
+      "allergy_tags": [],
+      "description": "Cơm gà xối mỡ giòn rụm, thịt gà mềm ngọt ăn kèm nước mắm tỏi ớt đậm vị.",
+      "category": "Cơm - Mì",
+      "image_alt": "Cơm Gà Xối Mỡ Giòn - ảnh minh họa rice cho nhóm Cơm - Mì"
+    },
+    {
+      "id": "food_007",
+      "name": "Trà Chanh Tắc Đá Xay Size L",
+      "shop": "Trà Chanh Bụi Phố - KTX ĐHQG",
+      "price": 18000,
+      "rating": 4.4,
+      "distance": "0.3 km",
+      "eta": "8 phút",
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Chua ngọt",
+        "Giải khát",
+        "Không cay"
+      ],
+      "allergy_tags": [],
+      "description": "Trà chanh tắc đá xay mát lạnh, vị chua thanh ngọt dịu giải nhiệt cực đã.",
+      "category": "Đồ uống",
+      "image_alt": "Trà Chanh Tắc Đá Xay Size L - ảnh minh họa juice cho nhóm Đồ uống"
+    },
+    {
+      "id": "food_008",
+      "name": "Phở Bò Tái Nạm Gầu Đặc Biệt",
+      "shop": "Phở Hòa Pasteur - Quận 3",
+      "price": 85000,
+      "rating": 4.9,
+      "distance": "1.5 km",
+      "eta": "18 phút",
+      "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "high",
+      "taste_tags": [
+        "Đậm đà",
+        "Nóng",
+        "Truyền thống"
+      ],
+      "allergy_tags": [],
+      "description": "Phở bò truyền thống nước dùng ninh xương 12 tiếng, thịt bò tái mềm nạm gầu béo ngậy.",
+      "category": "Cơm - Mì",
+      "image_alt": "Phở Bò Tái Nạm Gầu Đặc Biệt - ảnh minh họa soup cho nhóm Cơm - Mì"
+    },
+    {
+      "id": "food_009",
+      "name": "Bánh Tráng Nướng Đặc Biệt",
+      "shop": "Bánh Tráng Đà Lạt - Cô Giang",
+      "price": 25000,
+      "rating": 4.8,
+      "distance": "0.7 km",
+      "eta": "12 phút",
+      "image": "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Ăn vặt",
+        "Mặn",
+        "Không cay"
+      ],
+      "allergy_tags": [],
+      "description": "Bánh tráng nướng giòn rụm với trứng cút, xúc xích, hành phi và bơ béo ngậy.",
+      "category": "Ăn vặt",
+      "image_alt": "Bánh Tráng Nướng Đặc Biệt - ảnh minh họa snack cho nhóm Ăn vặt"
+    },
+    {
+      "id": "food_010",
+      "name": "Bánh Mì Thịt Nướng Bơ",
+      "shop": "Bánh Mì Huỳnh Hoa - Nguyễn Trãi",
+      "price": 38000,
+      "rating": 4.7,
+      "distance": "1.1 km",
+      "eta": "15 phút",
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "medium",
+      "taste_tags": [
+        "Bữa sáng",
+        "Đậm đà",
+        "Không cay"
+      ],
+      "allergy_tags": [
+        "Gluten"
+      ],
+      "description": "Bánh mì giòn rụm kẹp thịt nướng xiên que thơm phức cùng bơ vàng béo ngậy và đồ chua.",
+      "category": "Cơm - Mì",
+      "image_alt": "Bánh Mì Thịt Nướng Bơ - ảnh minh họa bread cho nhóm Cơm - Mì"
+    },
+    {
+      "id": "food_011",
+      "name": "Sữa Chua Trái Cây Tô",
+      "shop": "Sữa Chua Trái Cây Cô Oanh",
+      "price": 25000,
+      "rating": 4.6,
+      "distance": "0.5 km",
+      "eta": "9 phút",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Ngọt",
+        "Healthy",
+        "Giải khát"
+      ],
+      "allergy_tags": [
+        "Sữa"
+      ],
+      "description": "Sữa chua sánh mịn ăn kèm dâu tây, kiwi, xoài chín và hạt chia ngon ngọt mát lạnh.",
+      "category": "Healthy",
+      "image_alt": "Sữa Chua Trái Cây Tô - ảnh minh họa healthy cho nhóm Healthy"
+    },
+    {
+      "id": "food_012",
+      "name": "Trà Sữa Khoai Môn Size L",
+      "shop": "Gong Cha - Hồ Con Rùa",
+      "price": 45000,
+      "rating": 4.8,
+      "distance": "0.8 km",
+      "eta": "11 phút",
+      "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "medium",
+      "taste_tags": [
+        "Ngọt",
+        "Trà sữa",
+        "Béo"
+      ],
+      "allergy_tags": [
+        "Sữa"
+      ],
+      "description": "Trà sữa vị khoai môn thơm bùi ngậy béo kết hợp thạch sương sáo thanh mát.",
+      "category": "Đồ uống",
+      "image_alt": "Trà Sữa Khoai Môn Size L - ảnh minh họa milkTea cho nhóm Đồ uống"
+    },
+    {
+      "id": "food_013",
+      "name": "Bánh Mì Chả Cá Hải Phòng",
+      "shop": "Bánh Mì Chả Cá Đêm - Nguyễn Thái Học",
+      "price": 20000,
+      "rating": 4.5,
+      "distance": "0.6 km",
+      "eta": "10 phút",
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=300",
+      "budget_tier": "low",
+      "taste_tags": [
+        "Bữa sáng",
+        "Mặn",
+        "Không cay"
+      ],
+      "allergy_tags": [
+        "Gluten",
+        "Cá"
+      ],
+      "description": "Bánh mì chả cá nóng hổi, kẹp chả cá thu chiên vàng thơm phức, rưới sốt tỏi ớt chua ngọt.",
+      "category": "Cơm - Mì",
+      "image_alt": "Bánh Mì Chả Cá Hải Phòng - ảnh minh họa bread cho nhóm Cơm - Mì"
+    }
+  ]
+}
